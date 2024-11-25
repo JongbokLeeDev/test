@@ -78,6 +78,9 @@ class pppos():
 
         self.nav.phw = np.zeros(uGNSS.MAXSAT)
         self.nav.el = np.zeros(uGNSS.MAXSAT)
+        
+        self.nav.ciono = np.zeros(uGNSS.MAXSAT) # iono from code geometry free linear combination
+        self.nav.piono = np.zeros(uGNSS.MAXSAT) # iono from phase geometry free linear combination
 
         # Parameters for PPP
         #
@@ -1010,6 +1013,31 @@ class pppos():
             sat.append(sat_i)
 
         return np.array(sat, dtype=int)
+        
+    def gf_combination(obs, sat):
+        # Loop over constellations
+        #
+        piono = np.zeros(uGNSS.MAXSAT)
+        ciono = np.zeros(uGNSS.MAXSAT)
+        
+        for sys in obs.sig.keys():
+            idx = self.sysidx(sat, sys)
+            if len(idx) == 0:
+                continue
+            
+            freq0 = obs.sig[sys][uTYP.L][0].frequency()
+            freq1 = obs.sig[sys][uTYP.L][1].frequency()
+            
+            lam0 = rCST.CLIGHT/freq0
+            lam1 = rCST.CLIGHT/freq1
+            
+            piono[idx] = lam0 * obs.L[:, 0] - lam1 * obs.L[:, 1]
+            ciono[idx] = obs.P[:, 0] - obs.P[:, 1]
+            
+            piano = -piano / (1 - freq0*freq0/freq1/freq1)
+            ciano = ciano / (1 - freq0*freq0/freq1/freq1)
+        
+        return piono, ciono
 
     def base_process(self, obs, obsb, rs, dts, svh):
         """ processing for base station in RTK
@@ -1120,6 +1148,9 @@ class pppos():
             self.nav.x = xp
             self.nav.P = Pp
             self.nav.ns = 0
+            
+            self.nav.piano, self.nav.ciano = gf_combination(obs, sat)
+            
             for i in range(ns):
                 j = sat[i]-1
                 for f in range(self.nav.nf):
@@ -1143,8 +1174,6 @@ class pppos():
                 v, H, R = self.sdres(obs, xa, y, e, sat, el)
                 # R <= Q=H'PH+R  chisq<max_inno[3] (0.5)
                 if self.valpos(v, R):
-                    if self.nav.armode == 3:     # fix and hold
-                        self.holdamb(xa)    # hold fixed ambiguity
                     self.nav.smode = 4           # fix
 
         # Store epoch for solution

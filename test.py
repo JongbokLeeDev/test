@@ -4,7 +4,7 @@ import sys
 
 import rinex as rn
 import gnss as gn
-from gnss import rSigRnx, time2str
+from gnss import rSigRnx, time2str, uGNSS
 from rtk import rtkpos
 
 xyz_ref = [-3962108.7007, 3381309.5532, 3668678.6648]
@@ -58,6 +58,15 @@ t = np.zeros(nep)
 enu = np.zeros((nep, 3))
 smode = np.zeros(nep, dtype=int)
 
+# Arrays to store ionospheric delays and phase combinations
+iono = np.zeros((nep, uGNSS.MAXSAT))
+piono = np.zeros((nep, uGNSS.MAXSAT))
+ciono = np.zeros((nep, uGNSS.MAXSAT))
+smoothed_piono = np.zeros((nep, uGNSS.MAXSAT))
+
+# Weight for smoothing
+weight = 0.1
+
 for ne in range(nep):
     obs, obsb = rn.sync_obs(dec, decb)
     if ne == 0:
@@ -73,6 +82,18 @@ for ne in range(nep):
                              enu[ne, 0], enu[ne, 1], enu[ne, 2],
                              np.sqrt(enu[ne, 0]**2+enu[ne, 1]**2),
                              smode[ne]))
+    
+    # Store ionospheric delays
+    iono[ne, :] = nav.xa[7:7 + uGNSS.MAXSAT] if nav.smode == 4 else nav.x[7:7 + uGNSS.MAXSAT]
+    piono[ne, :] = nav.piono
+    ciono[ne, :] = nav.ciono
+    
+    # Carrier smoothing for pseudorange
+    if ne > 0:
+        smoothed_piono[ne, :] = weight * piono[ne, :] + (1 - weight) * (smoothed_piono[ne - 1, :] + ciono[ne, :] - ciono[ne - 1, :])
+    else:
+        smoothed_piono[ne, :] = piono[ne, :]
+    
 
 dec.fobs.close()
 decb.fobs.close()
@@ -88,3 +109,23 @@ def plt_enu(t, enu, dmax=0.1):
     plt.show()
 
 plt_enu(t, enu)
+
+# Function to plot ionospheric delays for each satellite separately
+def plt_iono(t, iono, dmax=1.0, label='Ionospheric Delays'):
+    plt.figure(figsize=(10, 6))
+    
+    # Loop over each satellite and plot its ionospheric delay
+    for sat_id in range(uGNSS.MAXSAT):
+        if np.any(iono[:, sat_id]):  # Only plot if there is data for this satellite
+            plt.plot(t, iono[:, sat_id], label=f'Satellite {sat_id+1} {label}')
+    
+    plt.ylabel('Ionospheric Delays (m)')
+    plt.xlabel('Time (s)')
+    plt.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
+    plt.grid()
+    plt.axis([0, nep, -dmax, dmax])
+    plt.show()
+
+# Plot ionospheric delays and smoothed ionospheric delays
+plt_iono(t, iono)
+plt_iono(t, smoothed_piono)
