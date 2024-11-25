@@ -9,42 +9,60 @@
 2023-08-26 00:00:01  G14 - edit - low elevation   6.0 deg
 2023-08-26 00:00:01  G20 - edit S2W  - low C/N0 12.8 dB-Hz
 2023-08-26 00:00:01  E31 - edit - low elevation   8.3 deg
-2023-08-26 00:00:01  G03 - init  ambiguity  GL1C       52.760
-2023-08-26 00:00:01  G04 - init  ambiguity  GL1C      115.292
-2023-08-26 00:00:01  G06 - init  ambiguity  GL1C       31.717
-2023-08-26 00:00:01  G09 - init  ambiguity  GL1C        2.630
-2023-08-26 00:00:01  G11 - init  ambiguity  GL1C       26.304
-2023-08-26 00:00:01  G12 - init  ambiguity  GL1C       29.552
-2023-08-26 00:00:01  G17 - init  ambiguity  GL1C       54.480
-2023-08-26 00:00:01  G19 - init  ambiguity  GL1C       43.505
-2023-08-26 00:00:01  G22 - init  ambiguity  GL1C       17.657
-2023-08-26 00:00:01  E04 - init  ambiguity  EL1C       33.880
-2023-08-26 00:00:01  E10 - init  ambiguity  EL1C        2.319
-2023-08-26 00:00:01  E11 - init  ambiguity  EL1C        4.956
-2023-08-26 00:00:01  E12 - init  ambiguity  EL1C       80.539
-2023-08-26 00:00:01  E19 - init  ambiguity  EL1C       50.009
-2023-08-26 00:00:01  E24 - init  ambiguity  EL1C       -9.059
-2023-08-26 00:00:01  E25 - init  ambiguity  EL1C      -38.517
-2023-08-26 00:00:01  E33 - init  ambiguity  EL1C     -108.333
-2023-08-26 00:00:01  J02 - init  ambiguity  JL1C     -423.368
-2023-08-26 00:00:01  G03 - init  ambiguity  GL2W       66.905
-2023-08-26 00:00:01  G04 - init  ambiguity  GL2W        1.416
-2023-08-26 00:00:01  G06 - init  ambiguity  GL2W      -17.708
-2023-08-26 00:00:01  G09 - init  ambiguity  GL2W       -4.628
-2023-08-26 00:00:01  G11 - init  ambiguity  GL2W        3.043
-2023-08-26 00:00:01  G12 - init  ambiguity  GL2W      -17.236
-2023-08-26 00:00:01  G17 - init  ambiguity  GL2W        3.311
-2023-08-26 00:00:01  G19 - init  ambiguity  GL2W       -8.417
-2023-08-26 00:00:01  G22 - init  ambiguity  GL2W       -8.209
-2023-08-26 00:00:01  E04 - init  ambiguity  EL5Q       12.733
-2023-08-26 00:00:01  E10 - init  ambiguity  EL5Q       24.379
-2023-08-26 00:00:01  E11 - init  ambiguity  EL5Q       19.812
-2023-08-26 00:00:01  E12 - init  ambiguity  EL5Q       97.202
-2023-08-26 00:00:01  E19 - init  ambiguity  EL5Q       41.342
-2023-08-26 00:00:01  E24 - init  ambiguity  EL5Q        0.074
-2023-08-26 00:00:01  E25 - init  ambiguity  EL5Q       24.373
-2023-08-26 00:00:01  E33 - init  ambiguity  EL5Q       41.031
-2023-08-26 00:00:01  J02 - init  ambiguity  JL2L     -213.823
+2023-08-26 00:00:01  G03 - init  ambiguity  GL1C       -1.761
+2023-08-26 00:00:01  G03 - init  ionosphere            -5.187
+2023-08-26 00:00:01  G04 - init  ambiguity  GL1C      101.191
+2023-08-26 00:00:01  G04 - init  ionosphere            -1.342
+2023-08-26 00:00:01  G06 - init  ambiguity  GL1C       -4.072
+2023-08-26 00:00:01  G06 - init  ionosphere            -3.405
+2023-08-26 00:00:01  G09 - init  ambiguity  GL1C      -21.397
+2023-08-26 00:00:01  G09 - init  ionosphere            -2.286
+2023-08-26 00:00:01  G11 - init  ambiguity  GL1C        8.872
+2023-08-26 00:00:01  G11 - init  ionosphere            -1.659
+2023-08-26 00:00:01  G12 - init  ambiguity  GL1C       -2.533
+2023-08-26 00:00:01  G12 - init  ionosphere            -3.053
+2023-08-26 00:00:01  G17 - init  ambiguity  GL1C       30.956
+2023-08-26 00:00:01  G17 - init  ionosphere            -2.238
+2023-08-26 00:00:01  G19 - init  ambiguity  GL1C       12.915
+2023-08-26 00:00:01  G19 - init  ionosphere            -2.911
+2023-08-26 00:00:01  G22 - init  ambiguity  GL1C       -8.677
+2023-08-26 00:00:01  G22 - init  ionosphere            -2.506
+2023-08-26 00:00:01  E04 - init  ambiguity  EL1C      104.219
+2023-08-26 00:00:01  E04 - init  ionosphere             6.693
+2023-08-26 00:00:01  E10 - init  ambiguity  EL1C       55.633
+2023-08-26 00:00:01  E10 - init  ionosphere             5.073
+2023-08-26 00:00:01  E11 - init  ambiguity  EL1C       52.732
+2023-08-26 00:00:01  E11 - init  ionosphere             4.546
+2023-08-26 00:00:01  E12 - init  ambiguity  EL1C      133.389
+2023-08-26 00:00:01  E12 - init  ionosphere             5.029
+2023-08-26 00:00:01  E19 - init  ambiguity  EL1C      105.350
+2023-08-26 00:00:01  E19 - init  ionosphere             5.266
+2023-08-26 00:00:01  E24 - init  ambiguity  EL1C       36.040
+2023-08-26 00:00:01  E24 - init  ionosphere             4.291
+2023-08-26 00:00:01  E25 - init  ambiguity  EL1C       -4.904
+2023-08-26 00:00:01  E25 - init  ionosphere             3.198
+2023-08-26 00:00:01  E33 - init  ambiguity  EL1C      -55.045
+2023-08-26 00:00:01  E33 - init  ionosphere             5.070
+2023-08-26 00:00:01  J02 - init  ambiguity  JL1C     -476.182
+2023-08-26 00:00:01  J02 - init  ionosphere            -5.025
+2023-08-26 00:00:01  G03 - init  ambiguity  GL2W       -3.063
+2023-08-26 00:00:01  G04 - init  ambiguity  GL2W      -16.680
+2023-08-26 00:00:01  G06 - init  ambiguity  GL2W      -63.637
+2023-08-26 00:00:01  G09 - init  ambiguity  GL2W      -35.463
+2023-08-26 00:00:01  G11 - init  ambiguity  GL2W      -19.327
+2023-08-26 00:00:01  G12 - init  ambiguity  GL2W      -58.412
+2023-08-26 00:00:01  G17 - init  ambiguity  GL2W      -26.878
+2023-08-26 00:00:01  G19 - init  ambiguity  GL2W      -47.675
+2023-08-26 00:00:01  G22 - init  ambiguity  GL2W      -42.004
+2023-08-26 00:00:01  E04 - init  ambiguity  EL5Q      106.926
+2023-08-26 00:00:01  E10 - init  ambiguity  EL5Q       95.773
+2023-08-26 00:00:01  E11 - init  ambiguity  EL5Q       83.791
+2023-08-26 00:00:01  E12 - init  ambiguity  EL5Q      167.976
+2023-08-26 00:00:01  E19 - init  ambiguity  EL5Q      115.451
+2023-08-26 00:00:01  E24 - init  ambiguity  EL5Q       60.469
+2023-08-26 00:00:01  E25 - init  ambiguity  EL5Q       69.385
+2023-08-26 00:00:01  E33 - init  ambiguity  EL5Q      112.390
+2023-08-26 00:00:01  J02 - init  ambiguity  JL2L     -281.602
 2023-08-26 00:00:02  G14 - edit - low elevation   5.9 deg
 2023-08-26 00:00:02  G20 - edit S2W  - low C/N0 12.8 dB-Hz
 2023-08-26 00:00:02  E31 - edit - low elevation   8.3 deg
@@ -101,9 +119,13 @@
 2023-08-26 00:00:06  G20 - edit S2W  - low C/N0 13.5 dB-Hz
 2023-08-26 00:00:06  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:06  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:06  J02 - init  ambiguity  JL1C     -425.559
+2023-08-26 00:00:06  J02 - reset ionosphere
+2023-08-26 00:00:06  J02 - init  ambiguity  JL1C     -501.751
+2023-08-26 00:00:06  J02 - init  ionosphere            -7.249
 2023-08-26 00:00:06  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:06  J02 - init  ambiguity  JL2L     -209.580
+2023-08-26 00:00:06  J02 - reset ionosphere
+2023-08-26 00:00:06  J02 - init  ambiguity  JL2L     -307.361
+2023-08-26 00:00:06  J02 - init  ionosphere            -7.249
 2023-08-26 00:00:07  G14 - edit - low elevation   5.9 deg
 2023-08-26 00:00:07  G20 - edit S2W  - low C/N0 14.2 dB-Hz
 2023-08-26 00:00:07  E31 - edit - low elevation   8.3 deg
@@ -171,9 +193,13 @@
 2023-08-26 00:00:12  G20 - edit S2W  - low C/N0 13.5 dB-Hz
 2023-08-26 00:00:12  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:12  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:12  J02 - init  ambiguity  JL1C     -425.947
+2023-08-26 00:00:12  J02 - reset ionosphere
+2023-08-26 00:00:12  J02 - init  ambiguity  JL1C     -489.306
+2023-08-26 00:00:12  J02 - init  ionosphere            -6.028
 2023-08-26 00:00:12  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:12  J02 - init  ambiguity  JL2L     -213.187
+2023-08-26 00:00:12  J02 - reset ionosphere
+2023-08-26 00:00:12  J02 - init  ambiguity  JL2L     -294.497
+2023-08-26 00:00:12  J02 - init  ionosphere            -6.028
 2023-08-26 00:00:13  G14 - edit - low elevation   5.9 deg
 2023-08-26 00:00:13  G20 - edit S2W  - low C/N0 13.5 dB-Hz
 2023-08-26 00:00:13  E31 - edit - low elevation   8.3 deg
@@ -241,9 +267,13 @@
 2023-08-26 00:00:18  G20 - edit S2W  - low C/N0 13.2 dB-Hz
 2023-08-26 00:00:18  E31 - edit - low elevation   8.2 deg
 2023-08-26 00:00:18  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:18  J02 - init  ambiguity  JL1C     -425.319
+2023-08-26 00:00:18  J02 - reset ionosphere
+2023-08-26 00:00:18  J02 - init  ambiguity  JL1C     -474.787
+2023-08-26 00:00:18  J02 - init  ionosphere            -4.707
 2023-08-26 00:00:18  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:18  J02 - init  ambiguity  JL2L     -216.175
+2023-08-26 00:00:18  J02 - reset ionosphere
+2023-08-26 00:00:18  J02 - init  ambiguity  JL2L     -279.659
+2023-08-26 00:00:18  J02 - init  ionosphere            -4.707
 2023-08-26 00:00:19  G14 - edit - low elevation   5.9 deg
 2023-08-26 00:00:19  G20 - edit S2W  - low C/N0 14.0 dB-Hz
 2023-08-26 00:00:19  E31 - edit - low elevation   8.2 deg
@@ -311,9 +341,13 @@
 2023-08-26 00:00:24  G20 - edit S2W  - low C/N0 13.0 dB-Hz
 2023-08-26 00:00:24  E31 - edit - low elevation   8.2 deg
 2023-08-26 00:00:24  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:24  J02 - init  ambiguity  JL1C     -428.347
+2023-08-26 00:00:24  J02 - reset ionosphere
+2023-08-26 00:00:24  J02 - init  ambiguity  JL1C     -493.801
+2023-08-26 00:00:24  J02 - init  ionosphere            -6.228
 2023-08-26 00:00:24  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:24  J02 - init  ambiguity  JL2L     -214.516
+2023-08-26 00:00:24  J02 - reset ionosphere
+2023-08-26 00:00:24  J02 - init  ambiguity  JL2L     -298.515
+2023-08-26 00:00:24  J02 - init  ionosphere            -6.228
 2023-08-26 00:00:25  G14 - edit - low elevation   5.8 deg
 2023-08-26 00:00:25  G20 - edit S2W  - low C/N0 12.5 dB-Hz
 2023-08-26 00:00:25  E31 - edit - low elevation   8.2 deg
@@ -381,9 +415,13 @@
 2023-08-26 00:00:30  G20 - edit S2W  - low C/N0 13.8 dB-Hz
 2023-08-26 00:00:30  E31 - edit - low elevation   8.2 deg
 2023-08-26 00:00:30  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:30  J02 - init  ambiguity  JL1C     -427.904
+2023-08-26 00:00:30  J02 - reset ionosphere
+2023-08-26 00:00:30  J02 - init  ambiguity  JL1C     -497.695
+2023-08-26 00:00:30  J02 - init  ionosphere            -6.640
 2023-08-26 00:00:30  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:30  J02 - init  ambiguity  JL2L     -213.053
+2023-08-26 00:00:30  J02 - reset ionosphere
+2023-08-26 00:00:30  J02 - init  ambiguity  JL2L     -302.619
+2023-08-26 00:00:30  J02 - init  ionosphere            -6.640
 2023-08-26 00:00:31  G14 - edit - low elevation   5.8 deg
 2023-08-26 00:00:31  G20 - edit S2W  - low C/N0 13.8 dB-Hz
 2023-08-26 00:00:31  E31 - edit - low elevation   8.2 deg
@@ -451,9 +489,13 @@
 2023-08-26 00:00:36  G20 - edit S2W  - low C/N0 14.0 dB-Hz
 2023-08-26 00:00:36  E31 - edit - low elevation   8.1 deg
 2023-08-26 00:00:36  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:36  J02 - init  ambiguity  JL1C     -425.372
+2023-08-26 00:00:36  J02 - reset ionosphere
+2023-08-26 00:00:36  J02 - init  ambiguity  JL1C     -476.254
+2023-08-26 00:00:36  J02 - init  ionosphere            -4.841
 2023-08-26 00:00:36  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:36  J02 - init  ambiguity  JL2L     -215.870
+2023-08-26 00:00:36  J02 - reset ionosphere
+2023-08-26 00:00:36  J02 - init  ambiguity  JL2L     -281.168
+2023-08-26 00:00:36  J02 - init  ionosphere            -4.841
 2023-08-26 00:00:37  G14 - edit - low elevation   5.8 deg
 2023-08-26 00:00:37  G20 - edit S2W  - low C/N0 13.8 dB-Hz
 2023-08-26 00:00:37  E31 - edit - low elevation   8.1 deg
@@ -521,9 +563,13 @@
 2023-08-26 00:00:42  G20 - edit S2W  - low C/N0 14.2 dB-Hz
 2023-08-26 00:00:42  E31 - edit - low elevation   8.1 deg
 2023-08-26 00:00:42  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:42  J02 - init  ambiguity  JL1C     -425.764
+2023-08-26 00:00:42  J02 - reset ionosphere
+2023-08-26 00:00:42  J02 - init  ambiguity  JL1C     -485.191
+2023-08-26 00:00:42  J02 - init  ionosphere            -5.654
 2023-08-26 00:00:42  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:42  J02 - init  ambiguity  JL2L     -214.051
+2023-08-26 00:00:42  J02 - reset ionosphere
+2023-08-26 00:00:42  J02 - init  ambiguity  JL2L     -290.315
+2023-08-26 00:00:42  J02 - init  ionosphere            -5.654
 2023-08-26 00:00:43  G14 - edit - low elevation   5.7 deg
 2023-08-26 00:00:43  G20 - edit S2W  - low C/N0 14.0 dB-Hz
 2023-08-26 00:00:43  E31 - edit - low elevation   8.1 deg
@@ -591,9 +637,13 @@
 2023-08-26 00:00:48  G20 - edit S2W  - low C/N0 14.2 dB-Hz
 2023-08-26 00:00:48  E31 - edit - low elevation   8.1 deg
 2023-08-26 00:00:48  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:48  J02 - init  ambiguity  JL1C     -426.097
+2023-08-26 00:00:48  J02 - reset ionosphere
+2023-08-26 00:00:48  J02 - init  ambiguity  JL1C     -474.250
+2023-08-26 00:00:48  J02 - init  ionosphere            -4.582
 2023-08-26 00:00:48  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:48  J02 - init  ambiguity  JL2L     -217.110
+2023-08-26 00:00:48  J02 - reset ionosphere
+2023-08-26 00:00:48  J02 - init  ambiguity  JL2L     -278.906
+2023-08-26 00:00:48  J02 - init  ionosphere            -4.582
 2023-08-26 00:00:49  G14 - edit - low elevation   5.7 deg
 2023-08-26 00:00:49  G20 - edit S2W  - low C/N0 14.2 dB-Hz
 2023-08-26 00:00:49  E31 - edit - low elevation   8.1 deg
@@ -661,1450 +711,5 @@
 2023-08-26 00:00:54  G20 - edit S2W  - low C/N0 13.8 dB-Hz
 2023-08-26 00:00:54  E31 - edit - low elevation   8.1 deg
 2023-08-26 00:00:54  J02 - reset ambiguity  JL1C
-2023-08-26 00:00:54  J02 - init  ambiguity  JL1C     -428.111
-2023-08-26 00:00:54  J02 - reset ambiguity  JL2L
-2023-08-26 00:00:54  J02 - init  ambiguity  JL2L     -214.954
-2023-08-26 00:00:55  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:55  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:00:55  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:55  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:55  E31 - edit - low elevation   8.1 deg
-2023-08-26 00:00:55  J03 - edit - satellite unhealthy
-2023-08-26 00:00:55  J04 - edit - satellite unhealthy
-2023-08-26 00:00:55  J07 - edit - satellite unhealthy
-2023-08-26 00:00:55  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:55  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:00:55  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:56  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:56  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:56  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:56  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:56  E31 - edit - low elevation   8.1 deg
-2023-08-26 00:00:56  J03 - edit - satellite unhealthy
-2023-08-26 00:00:56  J04 - edit - satellite unhealthy
-2023-08-26 00:00:56  J07 - edit - satellite unhealthy
-2023-08-26 00:00:56  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:56  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:56  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:57  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:57  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:57  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:57  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:57  E31 - edit - low elevation   8.1 deg
-2023-08-26 00:00:57  J03 - edit - satellite unhealthy
-2023-08-26 00:00:57  J04 - edit - satellite unhealthy
-2023-08-26 00:00:57  J07 - edit - satellite unhealthy
-2023-08-26 00:00:57  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:57  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:57  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:58  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:58  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:58  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:58  G14 - edit - low elevation   5.7 deg
-2023-08-26 00:00:58  E31 - edit - low elevation   8.1 deg
-2023-08-26 00:00:58  J03 - edit - satellite unhealthy
-2023-08-26 00:00:58  J04 - edit - satellite unhealthy
-2023-08-26 00:00:58  J07 - edit - satellite unhealthy
-2023-08-26 00:00:58  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:58  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:00:58  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:59  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:59  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:00:59  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:00:59  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:59  E31 - edit - low elevation   8.1 deg
-2023-08-26 00:00:59  J03 - edit - satellite unhealthy
-2023-08-26 00:00:59  J04 - edit - satellite unhealthy
-2023-08-26 00:00:59  J07 - edit - satellite unhealthy
-2023-08-26 00:00:59  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:00:59  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:00:59  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:00  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:00  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:00  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:00  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:00  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:00  J03 - edit - satellite unhealthy
-2023-08-26 00:01:00  J04 - edit - satellite unhealthy
-2023-08-26 00:01:00  J07 - edit - satellite unhealthy
-2023-08-26 00:01:00  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:00  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:00  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:00  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:00  J02 - init  ambiguity  JL1C     -425.417
-2023-08-26 00:01:00  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:00  J02 - init  ambiguity  JL2L     -215.063
-2023-08-26 00:01:01  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:01  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:01  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:01  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:01  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:01  J03 - edit - satellite unhealthy
-2023-08-26 00:01:01  J04 - edit - satellite unhealthy
-2023-08-26 00:01:01  J07 - edit - satellite unhealthy
-2023-08-26 00:01:01  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:01  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:01  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:02  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:02  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:02  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:02  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:02  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:02  J03 - edit - satellite unhealthy
-2023-08-26 00:01:02  J04 - edit - satellite unhealthy
-2023-08-26 00:01:02  J07 - edit - satellite unhealthy
-2023-08-26 00:01:02  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:02  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:02  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:03  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:03  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:03  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:03  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:03  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:03  J03 - edit - satellite unhealthy
-2023-08-26 00:01:03  J04 - edit - satellite unhealthy
-2023-08-26 00:01:03  J07 - edit - satellite unhealthy
-2023-08-26 00:01:03  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:03  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:03  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:04  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:04  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:04  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:04  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:04  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:04  J03 - edit - satellite unhealthy
-2023-08-26 00:01:04  J04 - edit - satellite unhealthy
-2023-08-26 00:01:04  J07 - edit - satellite unhealthy
-2023-08-26 00:01:04  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:04  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:04  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:05  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:05  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:05  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:05  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:05  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:05  J03 - edit - satellite unhealthy
-2023-08-26 00:01:05  J04 - edit - satellite unhealthy
-2023-08-26 00:01:05  J07 - edit - satellite unhealthy
-2023-08-26 00:01:05  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:05  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:05  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:06  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:06  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:06  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:06  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:06  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:06  J03 - edit - satellite unhealthy
-2023-08-26 00:01:06  J04 - edit - satellite unhealthy
-2023-08-26 00:01:06  J07 - edit - satellite unhealthy
-2023-08-26 00:01:06  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:06  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:06  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:06  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:06  J02 - init  ambiguity  JL1C     -426.543
-2023-08-26 00:01:06  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:06  J02 - init  ambiguity  JL2L     -214.545
-2023-08-26 00:01:07  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:07  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:07  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:07  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:07  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:07  J03 - edit - satellite unhealthy
-2023-08-26 00:01:07  J04 - edit - satellite unhealthy
-2023-08-26 00:01:07  J07 - edit - satellite unhealthy
-2023-08-26 00:01:07  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:07  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:07  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:08  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:08  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:08  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:08  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:08  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:08  J03 - edit - satellite unhealthy
-2023-08-26 00:01:08  J04 - edit - satellite unhealthy
-2023-08-26 00:01:08  J07 - edit - satellite unhealthy
-2023-08-26 00:01:08  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:08  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:08  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:09  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:09  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:09  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:09  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:09  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:09  J03 - edit - satellite unhealthy
-2023-08-26 00:01:09  J04 - edit - satellite unhealthy
-2023-08-26 00:01:09  J07 - edit - satellite unhealthy
-2023-08-26 00:01:09  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:09  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:09  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:10  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:10  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:10  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:10  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:10  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:10  J03 - edit - satellite unhealthy
-2023-08-26 00:01:10  J04 - edit - satellite unhealthy
-2023-08-26 00:01:10  J07 - edit - satellite unhealthy
-2023-08-26 00:01:10  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:10  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:10  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:11  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:11  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:11  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:11  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:11  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:11  J03 - edit - satellite unhealthy
-2023-08-26 00:01:11  J04 - edit - satellite unhealthy
-2023-08-26 00:01:11  J07 - edit - satellite unhealthy
-2023-08-26 00:01:11  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:11  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:11  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:12  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:12  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:12  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:12  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:12  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:12  J03 - edit - satellite unhealthy
-2023-08-26 00:01:12  J04 - edit - satellite unhealthy
-2023-08-26 00:01:12  J07 - edit - satellite unhealthy
-2023-08-26 00:01:12  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:12  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:12  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:12  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:12  J02 - init  ambiguity  JL1C     -426.957
-2023-08-26 00:01:12  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:12  J02 - init  ambiguity  JL2L     -216.275
-2023-08-26 00:01:13  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:13  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:13  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:13  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:13  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:13  J03 - edit - satellite unhealthy
-2023-08-26 00:01:13  J04 - edit - satellite unhealthy
-2023-08-26 00:01:13  J07 - edit - satellite unhealthy
-2023-08-26 00:01:13  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:13  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:13  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:14  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:14  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:14  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:14  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:14  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:14  J03 - edit - satellite unhealthy
-2023-08-26 00:01:14  J04 - edit - satellite unhealthy
-2023-08-26 00:01:14  J07 - edit - satellite unhealthy
-2023-08-26 00:01:14  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:14  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:14  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:15  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:15  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:15  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:15  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:15  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:15  J03 - edit - satellite unhealthy
-2023-08-26 00:01:15  J04 - edit - satellite unhealthy
-2023-08-26 00:01:15  J07 - edit - satellite unhealthy
-2023-08-26 00:01:15  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:15  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:15  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:16  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:16  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:16  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:16  G14 - edit - low elevation   5.6 deg
-2023-08-26 00:01:16  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:16  J03 - edit - satellite unhealthy
-2023-08-26 00:01:16  J04 - edit - satellite unhealthy
-2023-08-26 00:01:16  J07 - edit - satellite unhealthy
-2023-08-26 00:01:16  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:16  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:16  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:17  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:17  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:17  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:17  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:17  J03 - edit - satellite unhealthy
-2023-08-26 00:01:17  J04 - edit - satellite unhealthy
-2023-08-26 00:01:17  J07 - edit - satellite unhealthy
-2023-08-26 00:01:17  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:17  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:17  G20 - init  ambiguity  GL1C       21.534
-2023-08-26 00:01:17  G20 - init  ambiguity  GL2W        8.302
-2023-08-26 00:01:18  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:18  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:18  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:18  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:18  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:18  J03 - edit - satellite unhealthy
-2023-08-26 00:01:18  J04 - edit - satellite unhealthy
-2023-08-26 00:01:18  J07 - edit - satellite unhealthy
-2023-08-26 00:01:18  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:18  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:18  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:18  G20 - reset ambiguity  GL1C
-2023-08-26 00:01:18  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:18  J02 - init  ambiguity  JL1C     -425.870
-2023-08-26 00:01:18  G20 - reset ambiguity  GL2W
-2023-08-26 00:01:18  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:18  J02 - init  ambiguity  JL2L     -215.876
-2023-08-26 00:01:19  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:19  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:19  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:19  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:19  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:19  J03 - edit - satellite unhealthy
-2023-08-26 00:01:19  J04 - edit - satellite unhealthy
-2023-08-26 00:01:19  J07 - edit - satellite unhealthy
-2023-08-26 00:01:19  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:19  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:19  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:20  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:20  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:20  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:20  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:20  E31 - edit - low elevation   8.0 deg
-2023-08-26 00:01:20  J03 - edit - satellite unhealthy
-2023-08-26 00:01:20  J04 - edit - satellite unhealthy
-2023-08-26 00:01:20  J07 - edit - satellite unhealthy
-2023-08-26 00:01:20  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:20  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:20  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:21  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:21  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:21  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:21  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:21  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:21  J03 - edit - satellite unhealthy
-2023-08-26 00:01:21  J04 - edit - satellite unhealthy
-2023-08-26 00:01:21  J07 - edit - satellite unhealthy
-2023-08-26 00:01:21  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:21  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:21  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:22  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:22  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:22  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:22  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:22  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:22  J03 - edit - satellite unhealthy
-2023-08-26 00:01:22  J04 - edit - satellite unhealthy
-2023-08-26 00:01:22  J07 - edit - satellite unhealthy
-2023-08-26 00:01:22  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:22  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:22  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:23  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:23  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:23  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:23  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:23  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:23  J03 - edit - satellite unhealthy
-2023-08-26 00:01:23  J04 - edit - satellite unhealthy
-2023-08-26 00:01:23  J07 - edit - satellite unhealthy
-2023-08-26 00:01:23  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:23  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:23  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:24  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:24  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:24  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:24  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:24  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:24  J03 - edit - satellite unhealthy
-2023-08-26 00:01:24  J04 - edit - satellite unhealthy
-2023-08-26 00:01:24  J07 - edit - satellite unhealthy
-2023-08-26 00:01:24  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:24  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:24  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:24  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:24  J02 - init  ambiguity  JL1C     -425.296
-2023-08-26 00:01:24  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:24  J02 - init  ambiguity  JL2L     -216.109
-2023-08-26 00:01:25  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:25  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:25  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:25  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:25  J03 - edit - satellite unhealthy
-2023-08-26 00:01:25  J04 - edit - satellite unhealthy
-2023-08-26 00:01:25  J07 - edit - satellite unhealthy
-2023-08-26 00:01:25  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:25  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:25  G20 - init  ambiguity  GL1C       19.472
-2023-08-26 00:01:25  G20 - init  ambiguity  GL2W        7.437
-2023-08-26 00:01:26  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:26  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:26  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:26  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:26  J03 - edit - satellite unhealthy
-2023-08-26 00:01:26  J04 - edit - satellite unhealthy
-2023-08-26 00:01:26  J07 - edit - satellite unhealthy
-2023-08-26 00:01:26  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:26  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:27  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:27  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:27  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:27  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:27  J03 - edit - satellite unhealthy
-2023-08-26 00:01:27  J04 - edit - satellite unhealthy
-2023-08-26 00:01:27  J07 - edit - satellite unhealthy
-2023-08-26 00:01:27  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:27  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:28  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:28  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:28  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:28  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:28  J03 - edit - satellite unhealthy
-2023-08-26 00:01:28  J04 - edit - satellite unhealthy
-2023-08-26 00:01:28  J07 - edit - satellite unhealthy
-2023-08-26 00:01:28  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:28  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:29  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:29  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:29  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:29  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:29  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:29  J03 - edit - satellite unhealthy
-2023-08-26 00:01:29  J04 - edit - satellite unhealthy
-2023-08-26 00:01:29  J07 - edit - satellite unhealthy
-2023-08-26 00:01:29  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:29  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:29  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:29  G20 - reset ambiguity  GL1C
-2023-08-26 00:01:29  G20 - reset ambiguity  GL2W
-2023-08-26 00:01:30  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:30  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:30  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:30  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:30  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:30  J03 - edit - satellite unhealthy
-2023-08-26 00:01:30  J04 - edit - satellite unhealthy
-2023-08-26 00:01:30  J07 - edit - satellite unhealthy
-2023-08-26 00:01:30  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:30  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:30  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:30  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:30  J02 - init  ambiguity  JL1C     -425.274
-2023-08-26 00:01:30  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:30  J02 - init  ambiguity  JL2L     -215.476
-2023-08-26 00:01:31  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:31  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:31  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:31  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:31  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:31  J03 - edit - satellite unhealthy
-2023-08-26 00:01:31  J04 - edit - satellite unhealthy
-2023-08-26 00:01:31  J07 - edit - satellite unhealthy
-2023-08-26 00:01:31  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:31  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:31  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:32  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:32  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:32  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:32  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:32  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:32  J03 - edit - satellite unhealthy
-2023-08-26 00:01:32  J04 - edit - satellite unhealthy
-2023-08-26 00:01:32  J07 - edit - satellite unhealthy
-2023-08-26 00:01:32  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:32  G20 - edit S2W  - low C/N0 13.8 dB-Hz
-2023-08-26 00:01:32  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:33  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:33  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:33  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:33  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:33  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:33  J03 - edit - satellite unhealthy
-2023-08-26 00:01:33  J04 - edit - satellite unhealthy
-2023-08-26 00:01:33  J07 - edit - satellite unhealthy
-2023-08-26 00:01:33  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:33  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:33  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:34  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:34  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:34  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:34  G14 - edit - low elevation   5.5 deg
-2023-08-26 00:01:34  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:34  J03 - edit - satellite unhealthy
-2023-08-26 00:01:34  J04 - edit - satellite unhealthy
-2023-08-26 00:01:34  J07 - edit - satellite unhealthy
-2023-08-26 00:01:34  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:34  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:34  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:35  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:35  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:35  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:35  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:35  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:35  J03 - edit - satellite unhealthy
-2023-08-26 00:01:35  J04 - edit - satellite unhealthy
-2023-08-26 00:01:35  J07 - edit - satellite unhealthy
-2023-08-26 00:01:35  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:35  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:35  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:36  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:36  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:36  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:36  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:36  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:36  J03 - edit - satellite unhealthy
-2023-08-26 00:01:36  J04 - edit - satellite unhealthy
-2023-08-26 00:01:36  J07 - edit - satellite unhealthy
-2023-08-26 00:01:36  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:36  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:36  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:36  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:36  J02 - init  ambiguity  JL1C     -424.942
-2023-08-26 00:01:36  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:36  J02 - init  ambiguity  JL2L     -216.133
-2023-08-26 00:01:37  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:37  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:37  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:37  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:37  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:37  J03 - edit - satellite unhealthy
-2023-08-26 00:01:37  J04 - edit - satellite unhealthy
-2023-08-26 00:01:37  J07 - edit - satellite unhealthy
-2023-08-26 00:01:37  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:37  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:37  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:38  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:38  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:38  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:38  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:38  J03 - edit - satellite unhealthy
-2023-08-26 00:01:38  J04 - edit - satellite unhealthy
-2023-08-26 00:01:38  J07 - edit - satellite unhealthy
-2023-08-26 00:01:38  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:38  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:38  G20 - init  ambiguity  GL1C       20.580
-2023-08-26 00:01:38  G20 - init  ambiguity  GL2W        6.432
-2023-08-26 00:01:39  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:39  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:39  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:39  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:39  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:39  J03 - edit - satellite unhealthy
-2023-08-26 00:01:39  J04 - edit - satellite unhealthy
-2023-08-26 00:01:39  J07 - edit - satellite unhealthy
-2023-08-26 00:01:39  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:39  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:39  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:39  G20 - reset ambiguity  GL1C
-2023-08-26 00:01:39  G20 - reset ambiguity  GL2W
-2023-08-26 00:01:40  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:40  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:40  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:40  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:40  E31 - edit - low elevation   7.9 deg
-2023-08-26 00:01:40  J03 - edit - satellite unhealthy
-2023-08-26 00:01:40  J04 - edit - satellite unhealthy
-2023-08-26 00:01:40  J07 - edit - satellite unhealthy
-2023-08-26 00:01:40  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:40  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:40  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:41  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:41  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:41  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:41  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:41  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:41  J03 - edit - satellite unhealthy
-2023-08-26 00:01:41  J04 - edit - satellite unhealthy
-2023-08-26 00:01:41  J07 - edit - satellite unhealthy
-2023-08-26 00:01:41  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:41  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:01:41  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:42  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:42  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:42  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:42  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:42  J03 - edit - satellite unhealthy
-2023-08-26 00:01:42  J04 - edit - satellite unhealthy
-2023-08-26 00:01:42  J07 - edit - satellite unhealthy
-2023-08-26 00:01:42  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:42  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:42  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:42  G20 - init  ambiguity  GL1C       19.114
-2023-08-26 00:01:42  J02 - init  ambiguity  JL1C     -425.102
-2023-08-26 00:01:42  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:42  G20 - init  ambiguity  GL2W        6.595
-2023-08-26 00:01:42  J02 - init  ambiguity  JL2L     -214.275
-2023-08-26 00:01:43  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:43  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:43  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:43  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:43  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:43  J03 - edit - satellite unhealthy
-2023-08-26 00:01:43  J04 - edit - satellite unhealthy
-2023-08-26 00:01:43  J07 - edit - satellite unhealthy
-2023-08-26 00:01:43  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:43  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:43  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:43  G20 - reset ambiguity  GL1C
-2023-08-26 00:01:43  G20 - reset ambiguity  GL2W
-2023-08-26 00:01:44  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:44  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:44  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:44  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:44  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:44  J03 - edit - satellite unhealthy
-2023-08-26 00:01:44  J04 - edit - satellite unhealthy
-2023-08-26 00:01:44  J07 - edit - satellite unhealthy
-2023-08-26 00:01:44  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:44  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:44  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:45  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:45  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:45  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:45  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:45  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:45  J03 - edit - satellite unhealthy
-2023-08-26 00:01:45  J04 - edit - satellite unhealthy
-2023-08-26 00:01:45  J07 - edit - satellite unhealthy
-2023-08-26 00:01:45  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:45  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:45  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:46  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:46  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:46  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:46  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:46  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:46  J03 - edit - satellite unhealthy
-2023-08-26 00:01:46  J04 - edit - satellite unhealthy
-2023-08-26 00:01:46  J07 - edit - satellite unhealthy
-2023-08-26 00:01:46  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:46  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:46  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:47  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:47  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:47  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:47  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:47  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:47  J03 - edit - satellite unhealthy
-2023-08-26 00:01:47  J04 - edit - satellite unhealthy
-2023-08-26 00:01:47  J07 - edit - satellite unhealthy
-2023-08-26 00:01:47  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:47  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:47  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:48  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:48  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:48  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:48  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:48  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:48  J03 - edit - satellite unhealthy
-2023-08-26 00:01:48  J04 - edit - satellite unhealthy
-2023-08-26 00:01:48  J07 - edit - satellite unhealthy
-2023-08-26 00:01:48  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:48  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:01:48  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:48  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:48  J02 - init  ambiguity  JL1C     -424.383
-2023-08-26 00:01:48  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:48  J02 - init  ambiguity  JL2L     -217.255
-2023-08-26 00:01:49  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:49  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:49  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:49  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:49  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:49  J03 - edit - satellite unhealthy
-2023-08-26 00:01:49  J04 - edit - satellite unhealthy
-2023-08-26 00:01:49  J07 - edit - satellite unhealthy
-2023-08-26 00:01:49  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:49  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:01:49  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:50  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:50  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:50  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:50  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:50  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:50  J03 - edit - satellite unhealthy
-2023-08-26 00:01:50  J04 - edit - satellite unhealthy
-2023-08-26 00:01:50  J07 - edit - satellite unhealthy
-2023-08-26 00:01:50  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:50  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:01:50  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:51  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:51  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:51  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:51  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:51  J03 - edit - satellite unhealthy
-2023-08-26 00:01:51  J04 - edit - satellite unhealthy
-2023-08-26 00:01:51  J07 - edit - satellite unhealthy
-2023-08-26 00:01:51  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:51  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:51  G20 - init  ambiguity  GL1C       19.409
-2023-08-26 00:01:51  G20 - init  ambiguity  GL2W        4.954
-2023-08-26 00:01:52  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:52  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:52  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:52  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:52  J03 - edit - satellite unhealthy
-2023-08-26 00:01:52  J04 - edit - satellite unhealthy
-2023-08-26 00:01:52  J07 - edit - satellite unhealthy
-2023-08-26 00:01:52  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:52  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:53  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:53  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:53  G14 - edit - low elevation   5.4 deg
-2023-08-26 00:01:53  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:53  J03 - edit - satellite unhealthy
-2023-08-26 00:01:53  J04 - edit - satellite unhealthy
-2023-08-26 00:01:53  J07 - edit - satellite unhealthy
-2023-08-26 00:01:53  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:53  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:54  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:54  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:54  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:54  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:54  J03 - edit - satellite unhealthy
-2023-08-26 00:01:54  J04 - edit - satellite unhealthy
-2023-08-26 00:01:54  J07 - edit - satellite unhealthy
-2023-08-26 00:01:54  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:54  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:54  J02 - reset ambiguity  JL1C
-2023-08-26 00:01:54  J02 - init  ambiguity  JL1C     -424.352
-2023-08-26 00:01:54  J02 - reset ambiguity  JL2L
-2023-08-26 00:01:54  J02 - init  ambiguity  JL2L     -218.878
-2023-08-26 00:01:55  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:55  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:55  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:55  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:55  J03 - edit - satellite unhealthy
-2023-08-26 00:01:55  J04 - edit - satellite unhealthy
-2023-08-26 00:01:55  J07 - edit - satellite unhealthy
-2023-08-26 00:01:55  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:55  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:56  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:56  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:56  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:56  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:56  J03 - edit - satellite unhealthy
-2023-08-26 00:01:56  J04 - edit - satellite unhealthy
-2023-08-26 00:01:56  J07 - edit - satellite unhealthy
-2023-08-26 00:01:56  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:56  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:57  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:57  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:01:57  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:57  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:57  J03 - edit - satellite unhealthy
-2023-08-26 00:01:57  J04 - edit - satellite unhealthy
-2023-08-26 00:01:57  J07 - edit - satellite unhealthy
-2023-08-26 00:01:57  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:57  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:01:58  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:58  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:01:58  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:58  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:58  J03 - edit - satellite unhealthy
-2023-08-26 00:01:58  J04 - edit - satellite unhealthy
-2023-08-26 00:01:58  J07 - edit - satellite unhealthy
-2023-08-26 00:01:58  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:58  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:01:59  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:59  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:01:59  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:59  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:01:59  J03 - edit - satellite unhealthy
-2023-08-26 00:01:59  J04 - edit - satellite unhealthy
-2023-08-26 00:01:59  J07 - edit - satellite unhealthy
-2023-08-26 00:01:59  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:01:59  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:00  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:00  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:00  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:00  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:00  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:02:00  J03 - edit - satellite unhealthy
-2023-08-26 00:02:00  J04 - edit - satellite unhealthy
-2023-08-26 00:02:00  J07 - edit - satellite unhealthy
-2023-08-26 00:02:00  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:00  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:00  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:00  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:00  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:00  J02 - init  ambiguity  JL1C     -424.618
-2023-08-26 00:02:00  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:00  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:00  J02 - init  ambiguity  JL2L     -217.555
-2023-08-26 00:02:01  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:01  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:01  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:01  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:01  E31 - edit - low elevation   7.8 deg
-2023-08-26 00:02:01  J03 - edit - satellite unhealthy
-2023-08-26 00:02:01  J04 - edit - satellite unhealthy
-2023-08-26 00:02:01  J07 - edit - satellite unhealthy
-2023-08-26 00:02:01  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:01  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:01  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:02  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:02  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:02  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:02  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:02  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:02  J03 - edit - satellite unhealthy
-2023-08-26 00:02:02  J04 - edit - satellite unhealthy
-2023-08-26 00:02:02  J07 - edit - satellite unhealthy
-2023-08-26 00:02:02  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:02  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:02  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:03  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:03  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:03  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:03  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:03  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:03  J03 - edit - satellite unhealthy
-2023-08-26 00:02:03  J04 - edit - satellite unhealthy
-2023-08-26 00:02:03  J07 - edit - satellite unhealthy
-2023-08-26 00:02:03  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:03  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:03  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:04  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:04  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:04  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:04  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:04  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:04  J03 - edit - satellite unhealthy
-2023-08-26 00:02:04  J04 - edit - satellite unhealthy
-2023-08-26 00:02:04  J07 - edit - satellite unhealthy
-2023-08-26 00:02:04  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:04  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:04  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:05  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:05  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:05  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:05  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:05  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:05  J03 - edit - satellite unhealthy
-2023-08-26 00:02:05  J04 - edit - satellite unhealthy
-2023-08-26 00:02:05  J07 - edit - satellite unhealthy
-2023-08-26 00:02:05  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:05  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:05  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:06  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:06  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:06  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:06  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:06  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:06  J03 - edit - satellite unhealthy
-2023-08-26 00:02:06  J04 - edit - satellite unhealthy
-2023-08-26 00:02:06  J07 - edit - satellite unhealthy
-2023-08-26 00:02:06  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:06  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:06  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:06  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:06  J02 - init  ambiguity  JL1C     -424.994
-2023-08-26 00:02:06  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:06  J02 - init  ambiguity  JL2L     -215.266
-2023-08-26 00:02:07  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:07  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:07  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:07  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:07  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:07  J03 - edit - satellite unhealthy
-2023-08-26 00:02:07  J04 - edit - satellite unhealthy
-2023-08-26 00:02:07  J07 - edit - satellite unhealthy
-2023-08-26 00:02:07  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:07  G20 - edit S2W  - low C/N0 14.0 dB-Hz
-2023-08-26 00:02:07  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:08  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:08  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:08  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:08  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:08  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:08  J03 - edit - satellite unhealthy
-2023-08-26 00:02:08  J04 - edit - satellite unhealthy
-2023-08-26 00:02:08  J07 - edit - satellite unhealthy
-2023-08-26 00:02:08  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:08  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:08  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:09  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:09  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:09  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:09  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:09  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:09  J03 - edit - satellite unhealthy
-2023-08-26 00:02:09  J04 - edit - satellite unhealthy
-2023-08-26 00:02:09  J07 - edit - satellite unhealthy
-2023-08-26 00:02:09  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:09  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:09  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:10  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:10  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:10  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:10  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:10  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:10  J03 - edit - satellite unhealthy
-2023-08-26 00:02:10  J04 - edit - satellite unhealthy
-2023-08-26 00:02:10  J07 - edit - satellite unhealthy
-2023-08-26 00:02:10  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:10  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:10  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:11  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:11  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:11  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:11  G14 - edit - low elevation   5.3 deg
-2023-08-26 00:02:11  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:11  J03 - edit - satellite unhealthy
-2023-08-26 00:02:11  J04 - edit - satellite unhealthy
-2023-08-26 00:02:11  J07 - edit - satellite unhealthy
-2023-08-26 00:02:11  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:11  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:11  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:12  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:12  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:12  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:12  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:12  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:12  J03 - edit - satellite unhealthy
-2023-08-26 00:02:12  J04 - edit - satellite unhealthy
-2023-08-26 00:02:12  J07 - edit - satellite unhealthy
-2023-08-26 00:02:12  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:12  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:12  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:12  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:12  J02 - init  ambiguity  JL1C     -424.804
-2023-08-26 00:02:12  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:12  J02 - init  ambiguity  JL2L     -214.750
-2023-08-26 00:02:13  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:13  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:13  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:13  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:13  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:13  J03 - edit - satellite unhealthy
-2023-08-26 00:02:13  J04 - edit - satellite unhealthy
-2023-08-26 00:02:13  J07 - edit - satellite unhealthy
-2023-08-26 00:02:13  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:13  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:13  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:14  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:14  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:14  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:14  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:14  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:14  J03 - edit - satellite unhealthy
-2023-08-26 00:02:14  J04 - edit - satellite unhealthy
-2023-08-26 00:02:14  J07 - edit - satellite unhealthy
-2023-08-26 00:02:14  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:14  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:14  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:15  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:15  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:15  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:15  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:15  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:15  J03 - edit - satellite unhealthy
-2023-08-26 00:02:15  J04 - edit - satellite unhealthy
-2023-08-26 00:02:15  J07 - edit - satellite unhealthy
-2023-08-26 00:02:15  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:15  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:15  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:16  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:16  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:16  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:16  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:16  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:16  J03 - edit - satellite unhealthy
-2023-08-26 00:02:16  J04 - edit - satellite unhealthy
-2023-08-26 00:02:16  J07 - edit - satellite unhealthy
-2023-08-26 00:02:16  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:16  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:16  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:17  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:17  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:17  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:17  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:17  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:17  J03 - edit - satellite unhealthy
-2023-08-26 00:02:17  J04 - edit - satellite unhealthy
-2023-08-26 00:02:17  J07 - edit - satellite unhealthy
-2023-08-26 00:02:17  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:17  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:17  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:18  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:18  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:18  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:18  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:18  J03 - edit - satellite unhealthy
-2023-08-26 00:02:18  J04 - edit - satellite unhealthy
-2023-08-26 00:02:18  J07 - edit - satellite unhealthy
-2023-08-26 00:02:18  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:18  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:18  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:18  G20 - init  ambiguity  GL1C       22.669
-2023-08-26 00:02:18  J02 - init  ambiguity  JL1C     -422.248
-2023-08-26 00:02:18  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:18  G20 - init  ambiguity  GL2W        8.052
-2023-08-26 00:02:18  J02 - init  ambiguity  JL2L     -216.877
-2023-08-26 00:02:19  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:19  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:19  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:19  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:19  J03 - edit - satellite unhealthy
-2023-08-26 00:02:19  J04 - edit - satellite unhealthy
-2023-08-26 00:02:19  J07 - edit - satellite unhealthy
-2023-08-26 00:02:19  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:19  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:20  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:20  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:20  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:20  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:20  J03 - edit - satellite unhealthy
-2023-08-26 00:02:20  J04 - edit - satellite unhealthy
-2023-08-26 00:02:20  J07 - edit - satellite unhealthy
-2023-08-26 00:02:20  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:20  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:21  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:21  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:21  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:21  E31 - edit - low elevation   7.7 deg
-2023-08-26 00:02:21  J03 - edit - satellite unhealthy
-2023-08-26 00:02:21  J04 - edit - satellite unhealthy
-2023-08-26 00:02:21  J07 - edit - satellite unhealthy
-2023-08-26 00:02:21  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:21  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:22  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:22  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:22  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:22  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:22  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:22  J03 - edit - satellite unhealthy
-2023-08-26 00:02:22  J04 - edit - satellite unhealthy
-2023-08-26 00:02:22  J07 - edit - satellite unhealthy
-2023-08-26 00:02:22  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:22  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:22  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:22  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:22  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:23  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:23  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:23  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:23  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:23  J03 - edit - satellite unhealthy
-2023-08-26 00:02:23  J04 - edit - satellite unhealthy
-2023-08-26 00:02:23  J07 - edit - satellite unhealthy
-2023-08-26 00:02:23  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:23  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:23  G20 - init  ambiguity  GL1C       23.127
-2023-08-26 00:02:23  G20 - init  ambiguity  GL2W        7.330
-2023-08-26 00:02:24  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:24  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:24  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:24  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:24  J03 - edit - satellite unhealthy
-2023-08-26 00:02:24  J04 - edit - satellite unhealthy
-2023-08-26 00:02:24  J07 - edit - satellite unhealthy
-2023-08-26 00:02:24  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:24  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:24  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:24  J02 - init  ambiguity  JL1C     -422.333
-2023-08-26 00:02:24  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:24  J02 - init  ambiguity  JL2L     -217.563
-2023-08-26 00:02:25  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:25  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:25  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:25  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:25  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:25  J03 - edit - satellite unhealthy
-2023-08-26 00:02:25  J04 - edit - satellite unhealthy
-2023-08-26 00:02:25  J07 - edit - satellite unhealthy
-2023-08-26 00:02:25  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:25  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:25  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:25  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:25  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:26  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:26  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:26  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:26  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:26  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:26  J03 - edit - satellite unhealthy
-2023-08-26 00:02:26  J04 - edit - satellite unhealthy
-2023-08-26 00:02:26  J07 - edit - satellite unhealthy
-2023-08-26 00:02:26  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:26  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:26  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:27  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:27  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:27  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:27  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:27  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:27  J03 - edit - satellite unhealthy
-2023-08-26 00:02:27  J04 - edit - satellite unhealthy
-2023-08-26 00:02:27  J07 - edit - satellite unhealthy
-2023-08-26 00:02:27  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:27  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:27  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:28  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:28  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:28  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:28  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:28  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:28  J03 - edit - satellite unhealthy
-2023-08-26 00:02:28  J04 - edit - satellite unhealthy
-2023-08-26 00:02:28  J07 - edit - satellite unhealthy
-2023-08-26 00:02:28  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:28  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:28  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:29  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:29  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:29  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:29  G14 - edit - low elevation   5.2 deg
-2023-08-26 00:02:29  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:29  J03 - edit - satellite unhealthy
-2023-08-26 00:02:29  J04 - edit - satellite unhealthy
-2023-08-26 00:02:29  J07 - edit - satellite unhealthy
-2023-08-26 00:02:29  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:29  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:29  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:30  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:30  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:30  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:30  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:30  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:30  J03 - edit - satellite unhealthy
-2023-08-26 00:02:30  J04 - edit - satellite unhealthy
-2023-08-26 00:02:30  J07 - edit - satellite unhealthy
-2023-08-26 00:02:30  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:30  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:30  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:30  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:30  J02 - init  ambiguity  JL1C     -423.193
-2023-08-26 00:02:30  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:30  J02 - init  ambiguity  JL2L     -216.652
-2023-08-26 00:02:31  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:31  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:31  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:31  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:31  J03 - edit - satellite unhealthy
-2023-08-26 00:02:31  J04 - edit - satellite unhealthy
-2023-08-26 00:02:31  J07 - edit - satellite unhealthy
-2023-08-26 00:02:31  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:31  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:31  G20 - init  ambiguity  GL1C       27.086
-2023-08-26 00:02:31  G20 - init  ambiguity  GL2W        7.086
-2023-08-26 00:02:32  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:32  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:32  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:32  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:32  J03 - edit - satellite unhealthy
-2023-08-26 00:02:32  J04 - edit - satellite unhealthy
-2023-08-26 00:02:32  J07 - edit - satellite unhealthy
-2023-08-26 00:02:32  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:32  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:33  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:33  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:33  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:33  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:33  J03 - edit - satellite unhealthy
-2023-08-26 00:02:33  J04 - edit - satellite unhealthy
-2023-08-26 00:02:33  J07 - edit - satellite unhealthy
-2023-08-26 00:02:33  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:33  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:34  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:34  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:34  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:34  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:34  J03 - edit - satellite unhealthy
-2023-08-26 00:02:34  J04 - edit - satellite unhealthy
-2023-08-26 00:02:34  J07 - edit - satellite unhealthy
-2023-08-26 00:02:34  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:34  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:35  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:35  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:35  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:35  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:35  J03 - edit - satellite unhealthy
-2023-08-26 00:02:35  J04 - edit - satellite unhealthy
-2023-08-26 00:02:35  J07 - edit - satellite unhealthy
-2023-08-26 00:02:35  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:35  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:36  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:36  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:36  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:36  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:36  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:36  J03 - edit - satellite unhealthy
-2023-08-26 00:02:36  J04 - edit - satellite unhealthy
-2023-08-26 00:02:36  J07 - edit - satellite unhealthy
-2023-08-26 00:02:36  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:36  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:36  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:36  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:36  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:36  J02 - init  ambiguity  JL1C     -424.271
-2023-08-26 00:02:36  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:36  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:36  J02 - init  ambiguity  JL2L     -217.973
-2023-08-26 00:02:37  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:37  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:37  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:37  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:37  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:37  J03 - edit - satellite unhealthy
-2023-08-26 00:02:37  J04 - edit - satellite unhealthy
-2023-08-26 00:02:37  J07 - edit - satellite unhealthy
-2023-08-26 00:02:37  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:37  G20 - edit S2W  - low C/N0 14.2 dB-Hz
-2023-08-26 00:02:37  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:38  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:38  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:38  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:38  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:38  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:38  J03 - edit - satellite unhealthy
-2023-08-26 00:02:38  J04 - edit - satellite unhealthy
-2023-08-26 00:02:38  J07 - edit - satellite unhealthy
-2023-08-26 00:02:38  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:38  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:38  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:39  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:39  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:39  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:39  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:39  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:39  J03 - edit - satellite unhealthy
-2023-08-26 00:02:39  J04 - edit - satellite unhealthy
-2023-08-26 00:02:39  J07 - edit - satellite unhealthy
-2023-08-26 00:02:39  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:39  G20 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:39  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:40  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:40  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:40  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:40  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:40  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:40  J03 - edit - satellite unhealthy
-2023-08-26 00:02:40  J04 - edit - satellite unhealthy
-2023-08-26 00:02:40  J07 - edit - satellite unhealthy
-2023-08-26 00:02:40  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:40  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:40  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:41  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:41  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:41  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:41  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:41  J03 - edit - satellite unhealthy
-2023-08-26 00:02:41  J04 - edit - satellite unhealthy
-2023-08-26 00:02:41  J07 - edit - satellite unhealthy
-2023-08-26 00:02:41  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:41  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:41  G20 - init  ambiguity  GL1C       23.565
-2023-08-26 00:02:41  G20 - init  ambiguity  GL2W        7.630
-2023-08-26 00:02:42  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:42  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:42  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:42  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:42  E31 - edit - low elevation   7.6 deg
-2023-08-26 00:02:42  J03 - edit - satellite unhealthy
-2023-08-26 00:02:42  J04 - edit - satellite unhealthy
-2023-08-26 00:02:42  J07 - edit - satellite unhealthy
-2023-08-26 00:02:42  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:42  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:42  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:42  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:42  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:42  J02 - init  ambiguity  JL1C     -425.222
-2023-08-26 00:02:42  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:42  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:42  J02 - init  ambiguity  JL2L     -220.385
-2023-08-26 00:02:43  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:43  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:43  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:43  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:43  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:43  J03 - edit - satellite unhealthy
-2023-08-26 00:02:43  J04 - edit - satellite unhealthy
-2023-08-26 00:02:43  J07 - edit - satellite unhealthy
-2023-08-26 00:02:43  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:43  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:43  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:44  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:44  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:44  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:44  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:44  J03 - edit - satellite unhealthy
-2023-08-26 00:02:44  J04 - edit - satellite unhealthy
-2023-08-26 00:02:44  J07 - edit - satellite unhealthy
-2023-08-26 00:02:44  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:44  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:44  G20 - init  ambiguity  GL1C       19.659
-2023-08-26 00:02:44  G20 - init  ambiguity  GL2W        7.381
-2023-08-26 00:02:45  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:45  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:45  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:45  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:45  J03 - edit - satellite unhealthy
-2023-08-26 00:02:45  J04 - edit - satellite unhealthy
-2023-08-26 00:02:45  J07 - edit - satellite unhealthy
-2023-08-26 00:02:45  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:45  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:46  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:46  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:46  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:46  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:46  J03 - edit - satellite unhealthy
-2023-08-26 00:02:46  J04 - edit - satellite unhealthy
-2023-08-26 00:02:46  J07 - edit - satellite unhealthy
-2023-08-26 00:02:46  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:46  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:47  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:47  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:47  G14 - edit - low elevation   5.1 deg
-2023-08-26 00:02:47  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:47  J03 - edit - satellite unhealthy
-2023-08-26 00:02:47  J04 - edit - satellite unhealthy
-2023-08-26 00:02:47  J07 - edit - satellite unhealthy
-2023-08-26 00:02:47  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:47  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:48  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:48  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:48  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:48  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:48  J03 - edit - satellite unhealthy
-2023-08-26 00:02:48  J04 - edit - satellite unhealthy
-2023-08-26 00:02:48  J07 - edit - satellite unhealthy
-2023-08-26 00:02:48  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:48  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:48  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:48  J02 - init  ambiguity  JL1C     -426.987
-2023-08-26 00:02:48  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:48  J02 - init  ambiguity  JL2L     -218.544
-2023-08-26 00:02:49  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:49  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:49  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:49  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:49  J03 - edit - satellite unhealthy
-2023-08-26 00:02:49  J04 - edit - satellite unhealthy
-2023-08-26 00:02:49  J07 - edit - satellite unhealthy
-2023-08-26 00:02:49  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:49  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:50  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:50  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:50  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:50  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:50  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:50  J03 - edit - satellite unhealthy
-2023-08-26 00:02:50  J04 - edit - satellite unhealthy
-2023-08-26 00:02:50  J07 - edit - satellite unhealthy
-2023-08-26 00:02:50  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:50  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:50  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:50  G20 - reset ambiguity  GL1C
-2023-08-26 00:02:50  G20 - reset ambiguity  GL2W
-2023-08-26 00:02:51  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:51  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:51  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:51  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:51  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:51  J03 - edit - satellite unhealthy
-2023-08-26 00:02:51  J04 - edit - satellite unhealthy
-2023-08-26 00:02:51  J07 - edit - satellite unhealthy
-2023-08-26 00:02:51  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:51  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:51  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:52  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:52  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:52  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:52  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:52  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:52  J03 - edit - satellite unhealthy
-2023-08-26 00:02:52  J04 - edit - satellite unhealthy
-2023-08-26 00:02:52  J07 - edit - satellite unhealthy
-2023-08-26 00:02:52  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:52  G20 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:52  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:53  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:53  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:53  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:53  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:53  J03 - edit - satellite unhealthy
-2023-08-26 00:02:53  J04 - edit - satellite unhealthy
-2023-08-26 00:02:53  J07 - edit - satellite unhealthy
-2023-08-26 00:02:53  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:53  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:53  G20 - init  ambiguity  GL1C       21.279
-2023-08-26 00:02:53  G20 - init  ambiguity  GL2W        7.009
-2023-08-26 00:02:54  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:54  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:54  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:54  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:54  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:54  J03 - edit - satellite unhealthy
-2023-08-26 00:02:54  J04 - edit - satellite unhealthy
-2023-08-26 00:02:54  J07 - edit - satellite unhealthy
-2023-08-26 00:02:54  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:54  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:54  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:54  G22 - reset ambiguity  GL1C
-2023-08-26 00:02:54  J02 - reset ambiguity  JL1C
-2023-08-26 00:02:54  J02 - init  ambiguity  JL1C     -426.978
-2023-08-26 00:02:54  G22 - reset ambiguity  GL2W
-2023-08-26 00:02:54  J02 - reset ambiguity  JL2L
-2023-08-26 00:02:54  J02 - init  ambiguity  JL2L     -218.030
-2023-08-26 00:02:55  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:55  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:55  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:55  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:55  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:55  J03 - edit - satellite unhealthy
-2023-08-26 00:02:55  J04 - edit - satellite unhealthy
-2023-08-26 00:02:55  J07 - edit - satellite unhealthy
-2023-08-26 00:02:55  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:55  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:55  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:56  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:56  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:56  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:56  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:56  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:56  J03 - edit - satellite unhealthy
-2023-08-26 00:02:56  J04 - edit - satellite unhealthy
-2023-08-26 00:02:56  J07 - edit - satellite unhealthy
-2023-08-26 00:02:56  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:56  G22 - edit S2W  - low C/N0 14.8 dB-Hz
-2023-08-26 00:02:56  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:57  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:57  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:57  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:57  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:57  J03 - edit - satellite unhealthy
-2023-08-26 00:02:57  J04 - edit - satellite unhealthy
-2023-08-26 00:02:57  J07 - edit - satellite unhealthy
-2023-08-26 00:02:57  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:57  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:57  G22 - init  ambiguity  GL1C       16.103
-2023-08-26 00:02:57  G22 - init  ambiguity  GL2W      -12.201
-2023-08-26 00:02:58  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:58  G22 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:58  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:02:58  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:58  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:58  J03 - edit - satellite unhealthy
-2023-08-26 00:02:58  J04 - edit - satellite unhealthy
-2023-08-26 00:02:58  J07 - edit - satellite unhealthy
-2023-08-26 00:02:58  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:58  G22 - edit S2W  - low C/N0 14.5 dB-Hz
-2023-08-26 00:02:58  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:02:58  G22 - reset ambiguity  GL1C
-2023-08-26 00:02:58  G22 - reset ambiguity  GL2W
-2023-08-26 00:02:59  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:59  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:02:59  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:59  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:02:59  J03 - edit - satellite unhealthy
-2023-08-26 00:02:59  J04 - edit - satellite unhealthy
-2023-08-26 00:02:59  J07 - edit - satellite unhealthy
-2023-08-26 00:02:59  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:02:59  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:02:59  G22 - init  ambiguity  GL1C       13.805
-2023-08-26 00:02:59  G22 - init  ambiguity  GL2W      -12.209
-2023-08-26 00:03:00  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:03:00  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:03:00  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:03:00  E31 - edit - low elevation   7.5 deg
-2023-08-26 00:03:00  J03 - edit - satellite unhealthy
-2023-08-26 00:03:00  J04 - edit - satellite unhealthy
-2023-08-26 00:03:00  J07 - edit - satellite unhealthy
-2023-08-26 00:03:00  G14 - edit - low elevation   5.0 deg
-2023-08-26 00:03:00  E31 - edit - low elevation   7.4 deg
-2023-08-26 00:03:00  J02 - reset ambiguity  JL1C
-2023-08-26 00:03:00  J02 - init  ambiguity  JL1C     -426.947
-2023-08-26 00:03:00  J02 - reset ambiguity  JL2L
-2023-08-26 00:03:00  J02 - init  ambiguity  JL2L     -216.184
+2023-08-26 00:00:54  J02 - reset ionosphere
+2023-08-26 00:00:54  J02 - init  ambiguity  JL1C     -491.176

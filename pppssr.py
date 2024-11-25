@@ -1014,7 +1014,7 @@ class pppos():
 
         return np.array(sat, dtype=int)
         
-    def gf_combination(obs, sat):
+    def gf_combination(self, obs, sat):
         # Loop over constellations
         #
         piono = np.zeros(uGNSS.MAXSAT)
@@ -1031,11 +1031,11 @@ class pppos():
             lam0 = rCST.CLIGHT/freq0
             lam1 = rCST.CLIGHT/freq1
             
-            piono[idx] = lam0 * obs.L[:, 0] - lam1 * obs.L[:, 1]
-            ciono[idx] = obs.P[:, 0] - obs.P[:, 1]
+            piono[idx] = lam0 * obs.L[idx, 0] - lam1 * obs.L[idx, 1]
+            ciono[idx] = obs.P[idx, 0] - obs.P[idx, 1]
             
-            piano = -piano / (1 - freq0*freq0/freq1/freq1)
-            ciano = ciano / (1 - freq0*freq0/freq1/freq1)
+            piono = -piono / (1 - freq0*freq0/freq1/freq1)
+            ciono = ciono / (1 - freq0*freq0/freq1/freq1)
         
         return piono, ciono
 
@@ -1149,7 +1149,7 @@ class pppos():
             self.nav.P = Pp
             self.nav.ns = 0
             
-            self.nav.piano, self.nav.ciano = gf_combination(obs, sat)
+            self.nav.piano, self.nav.ciano = self.gf_combination(obs, sat)
             
             for i in range(ns):
                 j = sat[i]-1

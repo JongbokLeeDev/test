@@ -18,7 +18,7 @@ class rtkpos(pppos):
         # trop, iono from cssr
         # phase windup model is local/regional
         super().__init__(nav=nav, pos0=pos0, logfile=logfile,
-                         trop_opt=0, iono_opt=0, phw_opt=0)
+                         trop_opt=1, iono_opt=1, phw_opt=0)
 
         self.nav.eratio = np.ones(self.nav.nf)*50  # [-] factor
         self.nav.err = [0, 0.01, 0.005]/np.sqrt(2)  # [m] sigma
