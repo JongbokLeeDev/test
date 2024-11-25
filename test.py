@@ -53,7 +53,7 @@ decb.autoSubstituteSignals()
 rtk = rtkpos(nav, dec.pos, 'test_rtk.log')
 rr = dec.pos
 
-nep = 3 * 60  # 3 minutes
+nep = 10  # 3 minutes
 t = np.zeros(nep)
 enu = np.zeros((nep, 3))
 smode = np.zeros(nep, dtype=int)
@@ -98,34 +98,53 @@ for ne in range(nep):
 dec.fobs.close()
 decb.fobs.close()
 
-def plt_enu(t, enu, dmax=0.1):
+def plt_enu(t, enu):
     plt.figure(figsize=(5,4))
     plt.plot(t, enu)
     plt.ylabel('pos err[m]')
     plt.xlabel('time[s]')
     plt.legend(['east', 'north', 'up'])
     plt.grid()
-    plt.axis([0, nep, -dmax, dmax])
+    plt.xlim([0, nep])
     plt.show()
 
 plt_enu(t, enu)
 
 # Function to plot ionospheric delays for each satellite separately
-def plt_iono(t, iono, dmax=1.0, label='Ionospheric Delays'):
-    plt.figure(figsize=(10, 6))
+def plt_iono(t, iono):
+    # Create a figure with 2 subplots (2 rows, 1 column)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12), sharex=True)  # 2 rows, 1 column
     
-    # Loop over each satellite and plot its ionospheric delay
-    for sat_id in range(uGNSS.MAXSAT):
+    # Plot GPS ionospheric delays in the first subplot (ax1)
+    for sat_id in range(uGNSS.GPSMAX):
         if np.any(iono[:, sat_id]):  # Only plot if there is data for this satellite
-            plt.plot(t, iono[:, sat_id], label=f'Satellite {sat_id+1} {label}')
-    
-    plt.ylabel('Ionospheric Delays (m)')
-    plt.xlabel('Time (s)')
-    plt.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
-    plt.grid()
-    plt.axis([0, nep, -dmax, dmax])
+            ax1.plot(t, iono[:, sat_id], label=f'{sat_id+1}')
+    ax1.set_title('GPS Ionospheric Delays')
+    ax1.set_ylabel('Ionospheric Delays (m)')
+    ax1.grid()
+    ax1.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
+
+    # Plot Galileo ionospheric delays in the second subplot (ax2)
+    for sat_id in range(uGNSS.GPSMAX, uGNSS.GPSMAX + uGNSS.GALMAX):
+        if np.any(iono[:, sat_id]):  # Only plot if there is data for this satellite
+            ax2.plot(t, iono[:, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
+    ax2.set_title('Galileo Ionospheric Delays')
+    ax2.set_ylabel('Ionospheric Delays (m)')
+    ax2.set_xlabel('Time (s)')
+    ax2.grid()
+    ax2.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
+
+    # Adjust layout to prevent overlap between subplots
+    plt.tight_layout()
+    ax1.set_xlim([0, nep])
+    ax2.set_xlim([0, nep])
+
     plt.show()
+
+
 
 # Plot ionospheric delays and smoothed ionospheric delays
 plt_iono(t, iono)
+plt_iono(t, piono)
+plt_iono(t, ciono)
 plt_iono(t, smoothed_piono)
