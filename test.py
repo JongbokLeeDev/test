@@ -113,27 +113,37 @@ def plt_enu(t, enu):
 plt_enu(t, enu)
 
 # Function to plot measurements for each satellite separately
-def plt_meas(t, measurement, title):
+def plt_meas(t, measurement, title, exclude_sat_ids=[]):
+    """
+    Function to plot measurements for each satellite separately, with optional exclusion of specific satellites.
+
+    Parameters:
+    - t: Time array
+    - measurement: Measurement data (time x satellites)
+    - title: Title for the plot
+    - exclude_sat_ids: List of satellite IDs to exclude from plotting
+    """
     # Create a figure with 2 subplots (2 rows, 1 column)
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12), sharex=True)  # 2 rows, 1 column
     
-    # Plot GPS ionospheric delays in the first subplot (ax1)
+    # Plot GPS measurements in the first subplot (ax1)
     for sat_id in range(uGNSS.GPSMAX):
-        if np.any(measurement[:, sat_id]):  # Only plot if there is data for this satellite
+        if sat_id not in exclude_sat_ids and np.any(measurement[:, sat_id]):  # Exclude specific satellites
             ax1.plot(t, measurement[:, sat_id], label=f'{sat_id+1}')
     ax1.set_ylabel('GPS (m)')
     ax1.grid()
     ax1.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
 
-    # Plot Galileo ionospheric delays in the second subplot (ax2)
+    # Plot Galileo measurements in the second subplot (ax2)
     for sat_id in range(uGNSS.GPSMAX, uGNSS.GPSMAX + uGNSS.GALMAX):
-        if np.any(measurement[:, sat_id]):  # Only plot if there is data for this satellite
+        if sat_id not in exclude_sat_ids and np.any(measurement[:, sat_id]):  # Exclude specific satellites
             ax2.plot(t, measurement[:, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
     ax2.set_ylabel('Galileo (m)')
     ax2.set_xlabel('Time (s)')
     ax2.grid()
     ax2.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
     
+    # Set the title for the figure
     fig.suptitle(title)
 
     # Adjust layout to prevent overlap between subplots
@@ -142,7 +152,6 @@ def plt_meas(t, measurement, title):
     ax2.set_xlim([0, nep])
 
     plt.show()
-
 
 
 # Plot measurments
