@@ -1020,10 +1020,8 @@ class pppos():
         piono = np.zeros(uGNSS.MAXSAT)
         ciono = np.zeros(uGNSS.MAXSAT)
         
-        for sys in obs.sig.keys():
-            idx = self.sysidx(sat, sys)
-            if len(idx) == 0:
-                continue
+        for i, s in enumerate(sat):
+            sys, _ = sat2prn(s)
             
             freq0 = obs.sig[sys][uTYP.L][0].frequency()
             freq1 = obs.sig[sys][uTYP.L][1].frequency()
@@ -1031,11 +1029,11 @@ class pppos():
             lam0 = rCST.CLIGHT/freq0
             lam1 = rCST.CLIGHT/freq1
             
-            piono[idx] = lam0 * obs.L[idx, 0] - lam1 * obs.L[idx, 1]
-            ciono[idx] = obs.P[idx, 0] - obs.P[idx, 1]
+            piono[s] = lam0 * obs.L[i, 0] - lam1 * obs.L[i, 1]
+            ciono[s] = obs.P[i, 0] - obs.P[i, 1]
             
-            piono = -piono / (1 - freq0*freq0/freq1/freq1)
-            ciono = ciono / (1 - freq0*freq0/freq1/freq1)
+        piono = -piono / (1 - freq0*freq0/freq1/freq1)
+        ciono = ciono / (1 - freq0*freq0/freq1/freq1)
         
         return piono, ciono
 
