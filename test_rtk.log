@@ -1,32 +1,37 @@
+2023-08-26 00:00:01  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:01  G14 - edit - low elevation   6.0 deg
-2023-08-26 00:00:01  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:01  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:01  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:01  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:01  G14 - edit - low elevation   6.0 deg
+2023-08-26 00:00:01  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:01  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:01  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:01  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:01  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:01  J03 - edit - satellite unhealthy
 2023-08-26 00:00:01  J04 - edit - satellite unhealthy
 2023-08-26 00:00:01  J07 - edit - satellite unhealthy
+2023-08-26 00:00:01  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:01  G14 - edit - low elevation   6.0 deg
-2023-08-26 00:00:01  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:01  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:01  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:01  E31 - edit - low elevation   8.3 deg
-2023-08-26 00:00:01  G03 - init  ambiguity  GL1C       -1.761
-2023-08-26 00:00:01  G03 - init  ionosphere            -5.187
-2023-08-26 00:00:01  G04 - init  ambiguity  GL1C      101.191
-2023-08-26 00:00:01  G04 - init  ionosphere            -1.342
-2023-08-26 00:00:01  G06 - init  ambiguity  GL1C       -4.072
-2023-08-26 00:00:01  G06 - init  ionosphere            -3.405
-2023-08-26 00:00:01  G09 - init  ambiguity  GL1C      -21.397
-2023-08-26 00:00:01  G09 - init  ionosphere            -2.286
-2023-08-26 00:00:01  G11 - init  ambiguity  GL1C        8.872
-2023-08-26 00:00:01  G11 - init  ionosphere            -1.659
-2023-08-26 00:00:01  G12 - init  ambiguity  GL1C       -2.533
-2023-08-26 00:00:01  G12 - init  ionosphere            -3.053
-2023-08-26 00:00:01  G17 - init  ambiguity  GL1C       30.956
-2023-08-26 00:00:01  G17 - init  ionosphere            -2.238
-2023-08-26 00:00:01  G19 - init  ambiguity  GL1C       12.915
-2023-08-26 00:00:01  G19 - init  ionosphere            -2.911
-2023-08-26 00:00:01  G22 - init  ambiguity  GL1C       -8.677
-2023-08-26 00:00:01  G22 - init  ionosphere            -2.506
+2023-08-26 00:00:01  G03 - init  ambiguity  GL1C       58.073
+2023-08-26 00:00:01  G03 - init  ionosphere             0.506
+2023-08-26 00:00:01  G04 - init  ambiguity  GL1C      134.251
+2023-08-26 00:00:01  G04 - init  ionosphere             1.804
+2023-08-26 00:00:01  G06 - init  ambiguity  GL1C       40.885
+2023-08-26 00:00:01  G06 - init  ionosphere             0.872
+2023-08-26 00:00:01  G09 - init  ambiguity  GL1C       11.308
+2023-08-26 00:00:01  G09 - init  ionosphere             0.826
+2023-08-26 00:00:01  G11 - init  ambiguity  GL1C       45.184
+2023-08-26 00:00:01  G11 - init  ionosphere             1.796
 2023-08-26 00:00:01  E04 - init  ambiguity  EL1C      104.219
 2023-08-26 00:00:01  E04 - init  ionosphere             6.693
 2023-08-26 00:00:01  E10 - init  ambiguity  EL1C       55.633
@@ -45,15 +50,11 @@
 2023-08-26 00:00:01  E33 - init  ionosphere             5.070
 2023-08-26 00:00:01  J02 - init  ambiguity  JL1C     -476.182
 2023-08-26 00:00:01  J02 - init  ionosphere            -5.025
-2023-08-26 00:00:01  G03 - init  ambiguity  GL2W       -3.063
-2023-08-26 00:00:01  G04 - init  ambiguity  GL2W      -16.680
-2023-08-26 00:00:01  G06 - init  ambiguity  GL2W      -63.637
-2023-08-26 00:00:01  G09 - init  ambiguity  GL2W      -35.463
-2023-08-26 00:00:01  G11 - init  ambiguity  GL2W      -19.327
-2023-08-26 00:00:01  G12 - init  ambiguity  GL2W      -58.412
-2023-08-26 00:00:01  G17 - init  ambiguity  GL2W      -26.878
-2023-08-26 00:00:01  G19 - init  ambiguity  GL2W      -47.675
-2023-08-26 00:00:01  G22 - init  ambiguity  GL2W      -42.004
+2023-08-26 00:00:01  G03 - init  ambiguity  GL5Q       71.864
+2023-08-26 00:00:01  G04 - init  ambiguity  GL5Q       35.684
+2023-08-26 00:00:01  G06 - init  ambiguity  GL5Q        0.027
+2023-08-26 00:00:01  G09 - init  ambiguity  GL5Q       26.439
+2023-08-26 00:00:01  G11 - init  ambiguity  GL5Q       19.372
 2023-08-26 00:00:01  E04 - init  ambiguity  EL5Q      106.926
 2023-08-26 00:00:01  E10 - init  ambiguity  EL5Q       95.773
 2023-08-26 00:00:01  E11 - init  ambiguity  EL5Q       83.791
@@ -63,60 +64,125 @@
 2023-08-26 00:00:01  E25 - init  ambiguity  EL5Q       69.385
 2023-08-26 00:00:01  E33 - init  ambiguity  EL5Q      112.390
 2023-08-26 00:00:01  J02 - init  ambiguity  JL2L     -281.602
+2023-08-26 00:00:02  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:02  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:02  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:02  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:02  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:02  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:02  G14 - edit - low elevation   6.0 deg
+2023-08-26 00:00:02  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:02  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:02  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:02  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:02  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:02  J03 - edit - satellite unhealthy
 2023-08-26 00:00:02  J04 - edit - satellite unhealthy
 2023-08-26 00:00:02  J07 - edit - satellite unhealthy
+2023-08-26 00:00:02  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:02  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:02  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:02  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:02  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:02  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:03  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:03  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:03  G20 - edit S2W  - low C/N0 13.0 dB-Hz
+2023-08-26 00:00:03  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:03  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:03  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:03  G14 - edit - low elevation   6.0 deg
+2023-08-26 00:00:03  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:03  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:03  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:03  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:03  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:03  J03 - edit - satellite unhealthy
 2023-08-26 00:00:03  J04 - edit - satellite unhealthy
 2023-08-26 00:00:03  J07 - edit - satellite unhealthy
+2023-08-26 00:00:03  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:03  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:03  G20 - edit S2W  - low C/N0 13.0 dB-Hz
+2023-08-26 00:00:03  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:03  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:03  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:04  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:04  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:04  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:04  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:04  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:04  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:04  G14 - edit - low elevation   6.0 deg
+2023-08-26 00:00:04  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:04  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:04  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:04  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:04  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:04  J03 - edit - satellite unhealthy
 2023-08-26 00:00:04  J04 - edit - satellite unhealthy
 2023-08-26 00:00:04  J07 - edit - satellite unhealthy
+2023-08-26 00:00:04  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:04  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:04  G20 - edit S2W  - low C/N0 12.8 dB-Hz
+2023-08-26 00:00:04  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:04  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:04  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:05  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:05  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:05  G20 - edit S2W  - low C/N0 13.0 dB-Hz
+2023-08-26 00:00:05  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:05  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:05  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:05  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:05  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:05  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:05  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:05  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:05  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:05  J03 - edit - satellite unhealthy
 2023-08-26 00:00:05  J04 - edit - satellite unhealthy
 2023-08-26 00:00:05  J07 - edit - satellite unhealthy
+2023-08-26 00:00:05  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:05  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:05  G20 - edit S2W  - low C/N0 13.0 dB-Hz
+2023-08-26 00:00:05  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:05  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:05  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:06  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:06  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:06  G20 - edit S2W  - low C/N0 13.5 dB-Hz
+2023-08-26 00:00:06  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:06  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:06  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:06  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:06  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:06  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:06  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:06  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:06  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:06  J03 - edit - satellite unhealthy
 2023-08-26 00:00:06  J04 - edit - satellite unhealthy
 2023-08-26 00:00:06  J07 - edit - satellite unhealthy
+2023-08-26 00:00:06  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:06  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:06  G20 - edit S2W  - low C/N0 13.5 dB-Hz
+2023-08-26 00:00:06  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:06  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:06  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:06  J02 - reset ambiguity  JL1C
 2023-08-26 00:00:06  J02 - reset ionosphere
@@ -126,47 +192,99 @@
 2023-08-26 00:00:06  J02 - reset ionosphere
 2023-08-26 00:00:06  J02 - init  ambiguity  JL2L     -307.361
 2023-08-26 00:00:06  J02 - init  ionosphere            -7.249
+2023-08-26 00:00:07  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:07  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:07  G20 - edit S2W  - low C/N0 14.2 dB-Hz
+2023-08-26 00:00:07  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:07  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:07  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:07  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:07  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:07  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:07  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:07  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:07  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:07  J03 - edit - satellite unhealthy
 2023-08-26 00:00:07  J04 - edit - satellite unhealthy
 2023-08-26 00:00:07  J07 - edit - satellite unhealthy
+2023-08-26 00:00:07  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:07  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:07  G20 - edit S2W  - low C/N0 14.2 dB-Hz
+2023-08-26 00:00:07  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:07  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:07  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:08  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:08  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:08  G20 - edit S2W  - low C/N0 14.2 dB-Hz
+2023-08-26 00:00:08  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:08  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:08  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:08  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:08  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:08  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:08  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:08  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:08  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:08  J03 - edit - satellite unhealthy
 2023-08-26 00:00:08  J04 - edit - satellite unhealthy
 2023-08-26 00:00:08  J07 - edit - satellite unhealthy
+2023-08-26 00:00:08  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:08  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:08  G20 - edit S2W  - low C/N0 14.2 dB-Hz
+2023-08-26 00:00:08  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:08  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:08  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:09  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:09  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:09  G20 - edit S2W  - low C/N0 14.0 dB-Hz
+2023-08-26 00:00:09  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:09  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:09  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:09  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:09  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:09  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:09  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:09  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:09  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:09  J03 - edit - satellite unhealthy
 2023-08-26 00:00:09  J04 - edit - satellite unhealthy
 2023-08-26 00:00:09  J07 - edit - satellite unhealthy
+2023-08-26 00:00:09  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:09  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:09  G20 - edit S2W  - low C/N0 14.0 dB-Hz
+2023-08-26 00:00:09  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:09  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:09  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:10  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:10  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:10  G20 - edit S2W  - low C/N0 14.0 dB-Hz
+2023-08-26 00:00:10  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:10  E31 - edit - low elevation   8.3 deg
+2023-08-26 00:00:10  G12 - edit C5X  - invalid PR obs
 2023-08-26 00:00:10  G14 - edit - low elevation   5.9 deg
+2023-08-26 00:00:10  G17 - edit C5X  - invalid PR obs
+2023-08-26 00:00:10  G19 - edit C5X  - invalid PR obs
+2023-08-26 00:00:10  G20 - edit C5X  - invalid PR obs
+2023-08-26 00:00:10  G22 - edit C5X  - invalid PR obs
 2023-08-26 00:00:10  E31 - edit - low elevation   8.3 deg
 2023-08-26 00:00:10  J03 - edit - satellite unhealthy
 2023-08-26 00:00:10  J04 - edit - satellite unhealthy
 2023-08-26 00:00:10  J07 - edit - satellite unhealthy
+2023-08-26 00:00:10  G12 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:10  G14 - edit - low elevation   5.9 deg
-2023-08-26 00:00:10  G20 - edit S2W  - low C/N0 14.0 dB-Hz
+2023-08-26 00:00:10  G17 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G19 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G20 - edit C5Q  - invalid PR obs
+2023-08-26 00:00:10  G22 - edit C5Q  - invalid PR obs
 2023-08-26 00:00:10  E31 - edit - low elevation   8.3 deg

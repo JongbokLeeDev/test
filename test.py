@@ -10,25 +10,19 @@ from rtk import rtkpos
 xyz_ref = [-3962108.7007, 3381309.5532, 3668678.6648]
 pos_ref = gn.ecef2pos(xyz_ref)
 
-sigs = [rSigRnx("GC1C"), rSigRnx("GC2W"),
+sigs = [rSigRnx("GC1C"), rSigRnx("GC5Q"),
         rSigRnx("EC1C"), rSigRnx("EC5Q"),
-        rSigRnx("JC1C"), rSigRnx("JC2L"),
-        rSigRnx("GL1C"), rSigRnx("GL2W"),
+        rSigRnx("GL1C"), rSigRnx("GL5Q"),
         rSigRnx("EL1C"), rSigRnx("EL5Q"),
-        rSigRnx("JL1C"), rSigRnx("JL2L"),
-        rSigRnx("GS1C"), rSigRnx("GS2W"),
-        rSigRnx("ES1C"), rSigRnx("ES5Q"),
-        rSigRnx("JS1C"), rSigRnx("JS2L")]
+        rSigRnx("GS1C"), rSigRnx("GS5Q"),
+        rSigRnx("ES1C"), rSigRnx("ES5Q")]
 
-sigsb = [rSigRnx("GC1C"), rSigRnx("GC2W"),
+sigsb = [rSigRnx("GC1C"), rSigRnx("GC5X"),
          rSigRnx("EC1X"), rSigRnx("EC5X"),
-         rSigRnx("JC1X"), rSigRnx("JC2X"),
-         rSigRnx("GL1C"), rSigRnx("GL2W"),
+         rSigRnx("GL1C"), rSigRnx("GL5X"),
          rSigRnx("EL1X"), rSigRnx("EL5X"),
-         rSigRnx("JL1X"), rSigRnx("JL2X"),
-         rSigRnx("GS1C"), rSigRnx("GS2W"),
-         rSigRnx("ES1X"), rSigRnx("ES5X"),
-         rSigRnx("JS1X"), rSigRnx("JS2X")]
+         rSigRnx("GS1C"), rSigRnx("GS5X"),
+         rSigRnx("ES1X"), rSigRnx("ES5X")]
          
 bdir = 'data/'
 navfile = bdir+'SEPT238A.23P'
@@ -159,4 +153,4 @@ plt_meas(t, smoothed_piono, "Smoothed Iono")
 plt_meas(t, p1, "1st Phase")
 plt_meas(t, p2, "2nd Phase")
 plt_meas(t, c1, "1st Code")
-plt_meas(t, c2, "2st Code")
+plt_meas(t, c2, "2nd Code")
