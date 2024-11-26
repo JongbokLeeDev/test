@@ -59,6 +59,10 @@ enu = np.zeros((nep, 3))
 smode = np.zeros(nep, dtype=int)
 
 # Arrays to store ionospheric delays and phase combinations
+p1 = np.zeros((nep, uGNSS.MAXSAT))
+p2 = np.zeros((nep, uGNSS.MAXSAT))
+c1 = np.zeros((nep, uGNSS.MAXSAT))
+c2 = np.zeros((nep, uGNSS.MAXSAT))
 iono = np.zeros((nep, uGNSS.MAXSAT))
 piono = np.zeros((nep, uGNSS.MAXSAT))
 ciono = np.zeros((nep, uGNSS.MAXSAT))
@@ -87,6 +91,10 @@ for ne in range(nep):
     iono[ne, :] = nav.xa[7:7 + uGNSS.MAXSAT] if nav.smode == 4 else nav.x[7:7 + uGNSS.MAXSAT]
     piono[ne, :] = nav.piono
     ciono[ne, :] = nav.ciono
+    p1[ne, :] = nav.p1
+    c1[ne, :] = nav.c1
+    p2[ne, :] = nav.p2
+    c2[ne, :] = nav.c2    
     
     # Carrier smoothing for pseudorange
     if ne > 0:
@@ -110,29 +118,29 @@ def plt_enu(t, enu):
 
 plt_enu(t, enu)
 
-# Function to plot ionospheric delays for each satellite separately
-def plt_iono(t, iono):
+# Function to plot measurements for each satellite separately
+def plt_meas(t, measurement, title):
     # Create a figure with 2 subplots (2 rows, 1 column)
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12), sharex=True)  # 2 rows, 1 column
     
     # Plot GPS ionospheric delays in the first subplot (ax1)
     for sat_id in range(uGNSS.GPSMAX):
-        if np.any(iono[:, sat_id]):  # Only plot if there is data for this satellite
-            ax1.plot(t, iono[:, sat_id], label=f'{sat_id+1}')
-    ax1.set_title('GPS Ionospheric Delays')
-    ax1.set_ylabel('Ionospheric Delays (m)')
+        if np.any(measurement[:, sat_id]):  # Only plot if there is data for this satellite
+            ax1.plot(t, measurement[:, sat_id], label=f'{sat_id+1}')
+    ax1.set_ylabel('GPS (m)')
     ax1.grid()
     ax1.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
 
     # Plot Galileo ionospheric delays in the second subplot (ax2)
     for sat_id in range(uGNSS.GPSMAX, uGNSS.GPSMAX + uGNSS.GALMAX):
-        if np.any(iono[:, sat_id]):  # Only plot if there is data for this satellite
-            ax2.plot(t, iono[:, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
-    ax2.set_title('Galileo Ionospheric Delays')
-    ax2.set_ylabel('Ionospheric Delays (m)')
+        if np.any(measurement[:, sat_id]):  # Only plot if there is data for this satellite
+            ax2.plot(t, measurement[:, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
+    ax2.set_ylabel('Galileo (m)')
     ax2.set_xlabel('Time (s)')
     ax2.grid()
     ax2.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
+    
+    fig.suptitle(title)
 
     # Adjust layout to prevent overlap between subplots
     plt.tight_layout()
@@ -143,8 +151,12 @@ def plt_iono(t, iono):
 
 
 
-# Plot ionospheric delays and smoothed ionospheric delays
-plt_iono(t, iono)
-plt_iono(t, piono)
-plt_iono(t, ciono)
-plt_iono(t, smoothed_piono)
+# Plot measurments
+plt_meas(t, iono, "Estimated Iono")
+plt_meas(t, piono, "Iono from Phase Geometry Free Comb")
+plt_meas(t, ciono, "Iono from Code Geometry Free Comb")
+plt_meas(t, smoothed_piono, "Smoothed Iono")
+plt_meas(t, p1, "1st Phase")
+plt_meas(t, p2, "2nd Phase")
+plt_meas(t, c1, "1st Code")
+plt_meas(t, c2, "2st Code")

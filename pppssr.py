@@ -81,6 +81,10 @@ class pppos():
         
         self.nav.ciono = np.zeros(uGNSS.MAXSAT) # iono from code geometry free linear combination
         self.nav.piono = np.zeros(uGNSS.MAXSAT) # iono from phase geometry free linear combination
+        self.nav.c1 = np.zeros(uGNSS.MAXSAT) # 1st freq code measurment
+        self.nav.p1 = np.zeros(uGNSS.MAXSAT) # 1st freq phase measurment
+        self.nav.c2 = np.zeros(uGNSS.MAXSAT) # 2st freq code measurment
+        self.nav.p2 = np.zeros(uGNSS.MAXSAT) # 2st freq phase measurment
 
         # Parameters for PPP
         #
@@ -1020,6 +1024,11 @@ class pppos():
         piono = np.zeros(uGNSS.MAXSAT)
         ciono = np.zeros(uGNSS.MAXSAT)
         
+        p1 = np.zeros(uGNSS.MAXSAT)
+        p2 = np.zeros(uGNSS.MAXSAT)
+        c1 = np.zeros(uGNSS.MAXSAT)
+        c2 = np.zeros(uGNSS.MAXSAT)
+        
         for i, s in enumerate(sat):
             sys, _ = sat2prn(s)
             
@@ -1029,13 +1038,19 @@ class pppos():
             lam0 = rCST.CLIGHT/freq0
             lam1 = rCST.CLIGHT/freq1
             
+            p1[s] = lam0 * obs.L[i, 0]
+            p2[s] = lam1 * obs.L[i, 1]
+            
+            c1[s] = obs.P[i, 0]
+            c2[s] = obs.P[i, 1]
+            
             piono[s] = lam0 * obs.L[i, 0] - lam1 * obs.L[i, 1]
             ciono[s] = obs.P[i, 0] - obs.P[i, 1]
             
-        piono = -piono / (1 - freq0*freq0/freq1/freq1)
-        ciono = ciono / (1 - freq0*freq0/freq1/freq1)
+        piono = -piono / (1 - (freq0/freq1)**2)
+        ciono = ciono / (1 - (freq0/freq1)**2)
         
-        return piono, ciono
+        return piono, ciono, p1, p2, c1, c2
 
     def base_process(self, obs, obsb, rs, dts, svh):
         """ processing for base station in RTK
@@ -1147,7 +1162,7 @@ class pppos():
             self.nav.P = Pp
             self.nav.ns = 0
             
-            self.nav.piano, self.nav.ciano = self.gf_combination(obs, sat)
+            self.nav.piono, self.nav.ciono, self.nav.p1, self.nav.p2, self.nav.c1, self.nav.c2 = self.gf_combination(obs, sat)
             
             for i in range(ns):
                 j = sat[i]-1
