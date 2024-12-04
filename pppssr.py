@@ -78,13 +78,11 @@ class pppos():
 
         self.nav.phw = np.zeros(uGNSS.MAXSAT)
         self.nav.el = np.zeros(uGNSS.MAXSAT)
-        
-        self.nav.ciono = np.zeros(uGNSS.MAXSAT) # iono from code geometry free linear combination
-        self.nav.piono = np.zeros(uGNSS.MAXSAT) # iono from phase geometry free linear combination
-        self.nav.c1 = np.zeros(uGNSS.MAXSAT) # 1st freq code measurment
-        self.nav.p1 = np.zeros(uGNSS.MAXSAT) # 1st freq phase measurment
-        self.nav.c2 = np.zeros(uGNSS.MAXSAT) # 2st freq code measurment
-        self.nav.p2 = np.zeros(uGNSS.MAXSAT) # 2st freq phase measurment
+
+        self.nav.ciono_rover = np.nan(uGNSS.MAXSAT)
+        self.nav.ciono_base = np.nan(uGNSS.MAXSAT)
+        self.nav.piono_rover = np.nan(uGNSS.MAXSAT)
+        self.nav.piono_base = np.nan(uGNSS.MAXSAT)
 
         # Parameters for PPP
         #
@@ -1017,40 +1015,50 @@ class pppos():
             sat.append(sat_i)
 
         return np.array(sat, dtype=int)
-        
-    def gf_combination(self, obs, sat):
+
+    def gf_combination(self, obs):
         # Loop over constellations
         #
-        piono = np.zeros(uGNSS.MAXSAT)
-        ciono = np.zeros(uGNSS.MAXSAT)
-        
-        p1 = np.zeros(uGNSS.MAXSAT)
-        p2 = np.zeros(uGNSS.MAXSAT)
-        c1 = np.zeros(uGNSS.MAXSAT)
-        c2 = np.zeros(uGNSS.MAXSAT)
-        
-        for i, s in enumerate(sat):
+        piono = np.nan(uGNSS.MAXSAT)
+        ciono = np.nan(uGNSS.MAXSAT)
+
+        p1 = np.nan(uGNSS.MAXSAT)
+        p2 = np.nan(uGNSS.MAXSAT)
+        c1 = np.nan(uGNSS.MAXSAT)
+        c2 = np.nan(uGNSS.MAXSAT)
+
+        for i, s in enumerate(obs.sat):
             sys, _ = sat2prn(s)
-            
+
             freq0 = obs.sig[sys][uTYP.L][0].frequency()
             freq1 = obs.sig[sys][uTYP.L][1].frequency()
-            
+
             lam0 = rCST.CLIGHT/freq0
             lam1 = rCST.CLIGHT/freq1
-            
-            p1[s] = lam0 * obs.L[i, 0]
-            p2[s] = lam1 * obs.L[i, 1]
-            
-            c1[s] = obs.P[i, 0]
-            c2[s] = obs.P[i, 1]
-            
-            piono[s] = lam0 * obs.L[i, 0] - lam1 * obs.L[i, 1]
-            ciono[s] = obs.P[i, 0] - obs.P[i, 1]
-            
-        piono = -piono / (1 - (freq0/freq1)**2)
-        ciono = ciono / (1 - (freq0/freq1)**2)
-        
-        return piono, ciono, p1, p2, c1, c2
+
+            p1 = lam0 * obs.L[i, 0]
+            p2 = lam1 * obs.L[i, 1]
+
+            c1 = obs.P[i, 0]
+            c2 = obs.P[i, 1]
+
+            if p1 == 0 or p2 == 0 or c1 == 0 or c2 ==0:
+                continue
+
+            piono[s] = -(p1 - p2) / (1 - (freq0/freq1)**2)
+            ciono[s] = (c1 - c2) / (1 - (freq0/freq1)**2)
+
+        return piono, ciono
+
+    def filter_iono(self, obs, obsb, w = 0.01):
+        piono_rover, ciono_rover = self.gf_combination(obs)
+        piono_base, ciono_base = self.gf_combination(obsb)
+
+        self.nav.ciono_rover = w * ciono_rover + (1-w) * (self.nav.ciono_rover + piono_rover -  self.nav.piono_rover)
+        self.nav.piono_rover = piono_rover
+
+        self.nav.ciono_base = w * ciono_base + (1-w) * (self.nav.ciono_base + piono_base -  self.nav.piono_base)
+        self.nav.piono_base = piono_base
 
     def base_process(self, obs, obsb, rs, dts, svh):
         """ processing for base station in RTK
@@ -1075,6 +1083,17 @@ class pppos():
         if nsat < 6:
             print(" too few satellites < 6: nsat={:d}".format(nsat))
             return
+
+        # Iono estimation and monitoring
+        #
+        self.filter_iono(obs, obsb)
+
+        test_statistic = self.nav.ciono_rover - self.nav.ciono_base \
+            -np.nanmedian(self.nav.ciono_rover - self.nav.ciono_base)
+
+        thr_iono = 1.0 # meters
+
+        self.nav.excl_sat = np.where(np.abs(test_statistic) > thr_iono)[0]
 
         # Editing of observations
         #
@@ -1161,9 +1180,9 @@ class pppos():
             self.nav.x = xp
             self.nav.P = Pp
             self.nav.ns = 0
-            
+
             self.nav.piono, self.nav.ciono, self.nav.p1, self.nav.p2, self.nav.c1, self.nav.c2 = self.gf_combination(obs, sat)
-            
+
             for i in range(ns):
                 j = sat[i]-1
                 for f in range(self.nav.nf):

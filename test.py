@@ -23,7 +23,7 @@ sigsb = [rSigRnx("GC1C"), rSigRnx("GC5X"),
          rSigRnx("EL1X"), rSigRnx("EL5X"),
          rSigRnx("GS1C"), rSigRnx("GS5X"),
          rSigRnx("ES1X"), rSigRnx("ES5X")]
-         
+
 bdir = 'data/'
 navfile = bdir+'SEPT238A.23P'
 obsfile = bdir+'SEPT238A.23O'
@@ -52,23 +52,32 @@ t = np.zeros(nep)
 enu = np.zeros((nep, 3))
 smode = np.zeros(nep, dtype=int)
 
-# Arrays to store ionospheric delays and phase combinations
-p1 = np.zeros((nep, uGNSS.MAXSAT))
-p2 = np.zeros((nep, uGNSS.MAXSAT))
-c1 = np.zeros((nep, uGNSS.MAXSAT))
-c2 = np.zeros((nep, uGNSS.MAXSAT))
-iono = np.zeros((nep, uGNSS.MAXSAT))
-piono = np.zeros((nep, uGNSS.MAXSAT))
-ciono = np.zeros((nep, uGNSS.MAXSAT))
-smoothed_piono = np.zeros((nep, uGNSS.MAXSAT))
+# Adding an ionospheric error to one satellite
+#
+iono_l1 = np.zeros((nep, 1))
+iono_l5 = np.zeros((nep, 1))
+f1 = gn.rCST.FREQ_G1
+f2 = gn.rCST.FREQ_G5
+C0 = gn.rCST.CLIGHT
 
-# Weight for smoothing
-weight = 0.1
+for ne in range(nep):
+    iono_l1[ne] = 4 * np.sin(2*np.pi*ne/600)
+    iono_l5[ne] = iono_l1[ne] * (f1/f2)**2
 
 for ne in range(nep):
     obs, obsb = rn.sync_obs(dec, decb)
     if ne == 0:
         t0 = nav.t = obs.t
+
+    # Adding an ionospeheric error to one satellite
+    #
+    idx = np.where(obs.sat == 44)[0]
+    if len(idx) > 0:
+        obs.P[idx, 0] += iono_l1[ne]
+        obs.P[idx, 1] += iono_l5[ne]
+        obs.L[idx, 0] -= iono_l1[ne] * f1 / C0
+        obs.L[idx, 1] -= iono_l5[ne] * f2 / C0
+
     rtk.process(obs, obsb=obsb)
     t[ne] = gn.timediff(nav.t, t0)
     sol = nav.xa[0:3] if nav.smode == 4 else nav.x[0:3]
@@ -80,22 +89,6 @@ for ne in range(nep):
                              enu[ne, 0], enu[ne, 1], enu[ne, 2],
                              np.sqrt(enu[ne, 0]**2+enu[ne, 1]**2),
                              smode[ne]))
-    
-    # Store ionospheric delays
-    iono[ne, :] = nav.xa[7:7 + uGNSS.MAXSAT] if nav.smode == 4 else nav.x[7:7 + uGNSS.MAXSAT]
-    piono[ne, :] = nav.piono
-    ciono[ne, :] = nav.ciono
-    p1[ne, :] = nav.p1
-    c1[ne, :] = nav.c1
-    p2[ne, :] = nav.p2
-    c2[ne, :] = nav.c2    
-    
-    # Carrier smoothing for pseudorange
-    if ne > 0:
-        smoothed_piono[ne, :] = weight * piono[ne, :] + (1 - weight) * (smoothed_piono[ne - 1, :] + ciono[ne, :] - ciono[ne - 1, :])
-    else:
-        smoothed_piono[ne, :] = piono[ne, :]
-    
 
 dec.fobs.close()
 decb.fobs.close()
@@ -125,7 +118,7 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
     """
     # Create a figure with 2 subplots (2 rows, 1 column)
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12), sharex=True)  # 2 rows, 1 column
-    
+
     # Plot GPS measurements in the first subplot (ax1)
     for sat_id in range(uGNSS.GPSMAX):
         if sat_id not in exclude_sat_ids and np.any(measurement[:, sat_id]):  # Exclude specific satellites
@@ -142,7 +135,7 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
     ax2.set_xlabel('Time (s)')
     ax2.grid()
     ax2.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
-    
+
     # Set the title for the figure
     fig.suptitle(title)
 
@@ -155,11 +148,5 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
 
 
 # Plot measurments
-plt_meas(t, iono, "Estimated Iono")
-plt_meas(t, piono, "Iono from Phase Geometry Free Comb")
-plt_meas(t, ciono, "Iono from Code Geometry Free Comb")
-plt_meas(t, smoothed_piono, "Smoothed Iono")
-plt_meas(t, p1, "1st Phase")
-plt_meas(t, p2, "2nd Phase")
-plt_meas(t, c1, "1st Code")
-plt_meas(t, c2, "2nd Code")
+plt_meas(t, nav.piono_rover, "Iono from Phase Geometry Free Comb")
+plt_meas(t, nav.ciono_rover, "Iono from Code Geometry Free Comb")
