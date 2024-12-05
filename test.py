@@ -179,6 +179,6 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
 
 
 # Plot measurments
-plt_meas(t, ciono, "Smoothed Iono Estimated from Rover")
-plt_meas(t, ciono_base, "Smoothed Iono Estimated from Base")
-plt_meas(t, ciono-ciono_base, "Smoothed Iono Difference")
+plt_meas(t, smoothed_iono, "Smoothed Iono Estimated from Rover")
+plt_meas(t, smoothed_iono_base, "Smoothed Iono Estimated from Base")
+plt_meas(t, smoothed_iono-smoothed_iono_base, "Smoothed Iono Difference")
