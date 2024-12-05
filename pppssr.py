@@ -79,10 +79,10 @@ class pppos():
         self.nav.phw = np.zeros(uGNSS.MAXSAT)
         self.nav.el = np.zeros(uGNSS.MAXSAT)
 
-        self.nav.ciono_rover = np.nan(uGNSS.MAXSAT)
-        self.nav.ciono_base = np.nan(uGNSS.MAXSAT)
-        self.nav.piono_rover = np.nan(uGNSS.MAXSAT)
-        self.nav.piono_base = np.nan(uGNSS.MAXSAT)
+        self.nav.ciono_rover = np.zeros(uGNSS.MAXSAT)
+        self.nav.ciono_base = np.zeros(uGNSS.MAXSAT)
+        self.nav.piono_rover = np.zeros(uGNSS.MAXSAT)
+        self.nav.piono_base = np.zeros(uGNSS.MAXSAT)
 
         # Parameters for PPP
         #
@@ -1016,18 +1016,18 @@ class pppos():
 
         return np.array(sat, dtype=int)
 
-    def gf_combination(self, obs):
+    def gf_combination(self, obs, sat):
         # Loop over constellations
         #
-        piono = np.nan(uGNSS.MAXSAT)
-        ciono = np.nan(uGNSS.MAXSAT)
+        piono = np.zeros(uGNSS.MAXSAT)
+        ciono = np.zeros(uGNSS.MAXSAT)
 
-        p1 = np.nan(uGNSS.MAXSAT)
-        p2 = np.nan(uGNSS.MAXSAT)
-        c1 = np.nan(uGNSS.MAXSAT)
-        c2 = np.nan(uGNSS.MAXSAT)
+        p1 = np.zeros(uGNSS.MAXSAT)
+        p2 = np.zeros(uGNSS.MAXSAT)
+        c1 = np.zeros(uGNSS.MAXSAT)
+        c2 = np.zeros(uGNSS.MAXSAT)
 
-        for i, s in enumerate(obs.sat):
+        for i, s in enumerate(sat):
             sys, _ = sat2prn(s)
 
             freq0 = obs.sig[sys][uTYP.L][0].frequency()
@@ -1050,22 +1050,12 @@ class pppos():
 
         return piono, ciono
 
-    def filter_iono(self, obs, obsb, w = 0.01):
-        piono_rover, ciono_rover = self.gf_combination(obs)
-        piono_base, ciono_base = self.gf_combination(obsb)
-
-        self.nav.ciono_rover = w * ciono_rover + (1-w) * (self.nav.ciono_rover + piono_rover -  self.nav.piono_rover)
-        self.nav.piono_rover = piono_rover
-
-        self.nav.ciono_base = w * ciono_base + (1-w) * (self.nav.ciono_base + piono_base -  self.nav.piono_base)
-        self.nav.piono_base = piono_base
-
     def base_process(self, obs, obsb, rs, dts, svh):
         """ processing for base station in RTK
             (implemented in rtkpos) """
         return None, None, None, None
 
-    def process(self, obs, cs=None, orb=None, bsx=None, obsb=None):
+    def process(self, obs, cs=None, orb=None, bsx=None, obsb=None, excl_sat=[]):
         """
         PPP/PPP-RTK/RTK positioning
         """
@@ -1086,14 +1076,7 @@ class pppos():
 
         # Iono estimation and monitoring
         #
-        self.filter_iono(obs, obsb)
-
-        test_statistic = self.nav.ciono_rover - self.nav.ciono_base \
-            -np.nanmedian(self.nav.ciono_rover - self.nav.ciono_base)
-
-        thr_iono = 1.0 # meters
-
-        self.nav.excl_sat = np.where(np.abs(test_statistic) > thr_iono)[0]
+        self.nav.excl_sat = excl_sat
 
         # Editing of observations
         #
@@ -1180,9 +1163,9 @@ class pppos():
             self.nav.x = xp
             self.nav.P = Pp
             self.nav.ns = 0
-
-            self.nav.piono, self.nav.ciono, self.nav.p1, self.nav.p2, self.nav.c1, self.nav.c2 = self.gf_combination(obs, sat)
-
+            self.nav.piono_rover, self.nav.ciono_rover = self.gf_combination(obs, sat)
+            self.nav.piono_base, self.nav.ciono_base = self.gf_combination(obsb, sat)
+            
             for i in range(ns):
                 j = sat[i]-1
                 for f in range(self.nav.nf):

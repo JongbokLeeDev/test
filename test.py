@@ -52,6 +52,16 @@ t = np.zeros(nep)
 enu = np.zeros((nep, 3))
 smode = np.zeros(nep, dtype=int)
 
+iono = np.zeros((nep, uGNSS.MAXSAT))
+piono = np.zeros((nep, uGNSS.MAXSAT))
+ciono = np.zeros((nep, uGNSS.MAXSAT))
+smoothed_iono = np.zeros((nep, uGNSS.MAXSAT))
+piono_base = np.zeros((nep, uGNSS.MAXSAT))
+ciono_base = np.zeros((nep, uGNSS.MAXSAT))
+smoothed_iono_base = np.zeros((nep, uGNSS.MAXSAT))
+
+excl_sat = []
+
 # Adding an ionospheric error to one satellite
 #
 iono_l1 = np.zeros((nep, 1))
@@ -78,18 +88,39 @@ for ne in range(nep):
         obs.L[idx, 0] -= iono_l1[ne] * f1 / C0
         obs.L[idx, 1] -= iono_l5[ne] * f2 / C0
 
-    rtk.process(obs, obsb=obsb)
+    rtk.process(obs, obsb=obsb, excl_sat=excl_sat)
     t[ne] = gn.timediff(nav.t, t0)
     sol = nav.xa[0:3] if nav.smode == 4 else nav.x[0:3]
     enu[ne, :] = gn.ecef2enu(pos_ref, sol-xyz_ref)
     smode[ne] = nav.smode
+
     # Log to standard output
     sys.stdout.write('\r {} ENU {:7.4f} {:7.4f} {:7.4f}, 2D {:6.4f}, mode {:1d}'
                      .format(time2str(obs.t),
                              enu[ne, 0], enu[ne, 1], enu[ne, 2],
                              np.sqrt(enu[ne, 0]**2+enu[ne, 1]**2),
                              smode[ne]))
-
+                             
+    # Store ionospheric delays
+    iono[ne, :] = nav.xa[7:7 + uGNSS.MAXSAT] if nav.smode == 4 else nav.x[7:7 + uGNSS.MAXSAT]
+    piono[ne, :] = nav.piono_rover
+    ciono[ne, :] = nav.ciono_rover
+    piono_base[ne, :] = nav.piono_base
+    ciono_base[ne, :] = nav.ciono_base  
+    
+    # Carrier smoothing for pseudorange
+    weight = 0.01
+    if ne > 0:
+        smoothed_iono[ne, :] = weight * ciono[ne, :] + (1 - weight) * (smoothed_iono[ne - 1, :] + piono[ne, :] - piono[ne - 1, :])
+        smoothed_iono_base[ne, :] = weight * ciono_base[ne, :] + (1 - weight) * (smoothed_iono_base[ne - 1, :] + piono_base[ne, :] - piono_base[ne - 1, :])
+    else:
+        smoothed_iono[ne, :] = ciono[ne, :]
+        smoothed_iono_base[ne, :] = ciono_base[ne, :]
+        
+    test_statistic = smoothed_iono[ne, :] - smoothed_iono_base[ne, :] - np.nanmedian(smoothed_iono[ne, :] - smoothed_iono_base[ne, :])
+    thr_iono = 100.0 # meters
+    excl_sat = np.where(np.abs(test_statistic) > thr_iono)[0]
+    
 dec.fobs.close()
 decb.fobs.close()
 
@@ -148,5 +179,6 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
 
 
 # Plot measurments
-plt_meas(t, nav.piono_rover, "Iono from Phase Geometry Free Comb")
-plt_meas(t, nav.ciono_rover, "Iono from Code Geometry Free Comb")
+plt_meas(t, ciono, "Smoothed Iono Estimated from Rover")
+plt_meas(t, ciono_base, "Smoothed Iono Estimated from Base")
+plt_meas(t, ciono-ciono_base, "Smoothed Iono Difference")
