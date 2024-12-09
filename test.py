@@ -100,14 +100,14 @@ for ne in range(nep):
                              enu[ne, 0], enu[ne, 1], enu[ne, 2],
                              np.sqrt(enu[ne, 0]**2+enu[ne, 1]**2),
                              smode[ne]))
-                             
+
     # Store ionospheric delays
     iono[ne, :] = nav.xa[7:7 + uGNSS.MAXSAT] if nav.smode == 4 else nav.x[7:7 + uGNSS.MAXSAT]
     piono[ne, :] = nav.piono_rover
     ciono[ne, :] = nav.ciono_rover
     piono_base[ne, :] = nav.piono_base
-    ciono_base[ne, :] = nav.ciono_base  
-    
+    ciono_base[ne, :] = nav.ciono_base
+
     # Carrier smoothing for pseudorange
     weight = 0.01
     if ne > 0:
@@ -116,11 +116,11 @@ for ne in range(nep):
     else:
         smoothed_iono[ne, :] = ciono[ne, :]
         smoothed_iono_base[ne, :] = ciono_base[ne, :]
-        
+
     test_statistic = smoothed_iono[ne, :] - smoothed_iono_base[ne, :] - np.nanmedian(smoothed_iono[ne, :] - smoothed_iono_base[ne, :])
     thr_iono = 100.0 # meters
     excl_sat = np.where(np.abs(test_statistic) > thr_iono)[0]
-    
+
 dec.fobs.close()
 decb.fobs.close()
 
@@ -136,7 +136,6 @@ def plt_enu(t, enu):
 
 plt_enu(t, enu)
 
-# Function to plot measurements for each satellite separately
 def plt_meas(t, measurement, title, exclude_sat_ids=[]):
     """
     Function to plot measurements for each satellite separately, with optional exclusion of specific satellites.
@@ -152,16 +151,22 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
 
     # Plot GPS measurements in the first subplot (ax1)
     for sat_id in range(uGNSS.GPSMAX):
-        if sat_id not in exclude_sat_ids and np.any(measurement[:, sat_id]):  # Exclude specific satellites
-            ax1.plot(t, measurement[:, sat_id], label=f'{sat_id+1}')
+        if sat_id not in exclude_sat_ids:
+            # Filter out NaN and zero values
+            valid_mask = ~np.isnan(measurement[:, sat_id]) & (measurement[:, sat_id] != 0)
+            if np.any(valid_mask):  # Ensure there's at least one valid measurement
+                ax1.plot(t[valid_mask], measurement[valid_mask, sat_id], label=f'{sat_id+1}')
     ax1.set_ylabel('GPS (m)')
     ax1.grid()
     ax1.legend(loc='upper right', bbox_to_anchor=(1.05, 1))
 
     # Plot Galileo measurements in the second subplot (ax2)
     for sat_id in range(uGNSS.GPSMAX, uGNSS.GPSMAX + uGNSS.GALMAX):
-        if sat_id not in exclude_sat_ids and np.any(measurement[:, sat_id]):  # Exclude specific satellites
-            ax2.plot(t, measurement[:, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
+        if sat_id not in exclude_sat_ids:
+            # Filter out NaN and zero values
+            valid_mask = ~np.isnan(measurement[:, sat_id]) & (measurement[:, sat_id] != 0)
+            if np.any(valid_mask):  # Ensure there's at least one valid measurement
+                ax2.plot(t[valid_mask], measurement[valid_mask, sat_id], label=f'{sat_id-uGNSS.GPSMAX+1}')
     ax2.set_ylabel('Galileo (m)')
     ax2.set_xlabel('Time (s)')
     ax2.grid()
@@ -172,11 +177,10 @@ def plt_meas(t, measurement, title, exclude_sat_ids=[]):
 
     # Adjust layout to prevent overlap between subplots
     plt.tight_layout()
-    ax1.set_xlim([0, nep])
-    ax2.set_xlim([0, nep])
+    ax1.set_xlim([0, nep])  # Ensure 'nep' is defined correctly
+    ax2.set_xlim([0, nep])  # Ensure 'nep' is defined correctly
 
     plt.show()
-
 
 # Plot measurments
 plt_meas(t, smoothed_iono, "Smoothed Iono Estimated from Rover")
